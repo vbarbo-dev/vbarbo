@@ -1,0 +1,16 @@
+.headerSticky{
+    width: 100%;
+    position: fixed;
+    top: 1.5rem;
+    background-color: #34375abb;
+    border-radius: 10px;
+    z-index: 10;
+    @media (min-width: 319px) {
+        max-width: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+.logo {
+    width: 40px;
+}

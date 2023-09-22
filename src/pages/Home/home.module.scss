@@ -1,0 +1,21 @@
+.app {
+    background-color: #818cf8;
+}
+
+.wavy {
+    position: absolute;
+    width: 100vw;
+    top: -300px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+    svg path{
+        fill: #818cf8!important;
+    }
+}
+
+@media (max-width: 1366px) {
+    .wavy {
+        width: 1366px;
+    }
+}
