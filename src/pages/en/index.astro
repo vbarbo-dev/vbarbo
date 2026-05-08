@@ -1,0 +1,13 @@
+---
+import { en } from '../../i18n/en';
+
+const t = en;
+const lang = 'en';
+
+import Header from '../../components/sections/Header/Header.astro';
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout>
+  <Header t={t} lang={lang} />
+</Layout>
