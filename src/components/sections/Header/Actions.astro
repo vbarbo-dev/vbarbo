@@ -1,0 +1,25 @@
+---
+import { Globe, Download } from 'lucide-astro';
+
+const { lang } = Astro.props;
+
+const switchLang = lang === 'pt' ? '/en' : '/pt';
+const switchLabel = lang === 'pt' ? 'EN' : 'PT-BR';
+
+const resumeLabel = lang === 'pt' ? 'Currículo' : 'Resume'
+const resumeLink =
+  lang === 'pt'
+    ? '/curriculo-vinicius.pdf'
+    : '/resume-vinicius.pdf';
+---
+
+<div class="actions">
+  <a href={switchLang} class="action -lang">
+    <Globe />
+    {switchLabel}
+  </a>
+  <a href={resumeLink} class="action -resume" download>
+    <Download />
+    {resumeLabel}
+  </a>
+</div>

@@ -1,0 +1,10 @@
+---
+import { navigation } from "../../../data/navigation";
+const { t } = Astro.props;
+---
+
+<ul class="menu">
+  {navigation.map((item) => (
+    <li class="menu-item"><a href={item.href}>{t.nav[item.key]}</a></li>
+  ))}
+</ul>

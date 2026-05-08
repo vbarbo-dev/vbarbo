@@ -1,0 +1,16 @@
+---
+import Menu from "./Menu.astro"
+import Actions from "./Actions.astro"
+const { t, lang } = Astro.props;
+---
+
+<header class="header">
+  <nav class="container">
+    <div class="logo">
+      <span class="text-logo">vB</span>
+    </div>
+
+    <Menu t={t} />
+    <Actions t={t} lang={lang} />
+  </nav>
+</header>
