@@ -48,6 +48,17 @@
   }
 }
 
+.main-title {
+  font-weight: 700;
+  margin-bottom: 3.2rem;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: var(--color-drac-purple);
+  font-size: var(--font-size-base);
+}
+
+.-hidden { display: none !important }
+
 html {
   color: var(--font-color-base);
   font-size: 62.5%; // 1rem = 10px
