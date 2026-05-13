@@ -1,0 +1,31 @@
+@use '../../../abstracts/mixins' as *;
+
+.footer {
+  padding-top: 4.8rem;
+  padding-bottom: 4.8rem;
+  border-top: 1px solid;
+  @include color-mix-bg(var(--color-white), 70%);
+  border-color: color-mix(in oklab, var(--color-black) 5%, transparent);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer > .copyright {
+  display: flex;
+  gap: 2.4rem;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--color-zinc-400);
+}
+
+.footer > .back-to-top {
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+  color: var(--color-zinc-400);
+}
