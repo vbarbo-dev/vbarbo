@@ -1,0 +1,12 @@
+---
+const { about } = Astro.props;
+---
+
+<div class="cards">
+  {about.cards.map((card: { title: string, desc: string }) => (
+    <div class="card">
+      <span class="card-title">{card.title}</span>
+      <span class="card-desc">{card.desc}</span>
+    </div>
+  ))}
+</div>
