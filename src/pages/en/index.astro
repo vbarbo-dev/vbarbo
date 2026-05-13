@@ -7,6 +7,9 @@ const lang = 'en';
 import Layout from '../../layouts/Layout.astro';
 import Header from '../../components/sections/Header/Header.astro';
 import Hero from '../../components/sections/Hero/Hero.astro';
+import About from '../../components/sections/About/About.astro';
+
+import Footer from '../../components/sections/Footer/Footer.astro'
 ---
 
 <Layout>
@@ -14,5 +17,8 @@ import Hero from '../../components/sections/Hero/Hero.astro';
 
   <main>
     <Hero hero={t.hero} links={t.links} lang={lang} />
+    <About about={t.about} lang={lang} />
   </main>
+
+  <Footer footer={t.footer} lang={lang} />
 </Layout>

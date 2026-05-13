@@ -7,6 +7,11 @@ export const pt = {
     projects: 'Projetos',
     contact: 'Contato',
   },
+  links: {
+    linkedin: 'https://www.linkedin.com/in/vinicius-barbo/?locale=en-US',
+    github: 'https://github.com/vbarbo-dev',
+    email: 'vinicius@vbarbo.com.br',
+  },
   hero: {
     upper: 'Engenheiro Frontend | Especialista em E-commerce',
     title: 'Vinicius Barbo',
@@ -18,9 +23,19 @@ export const pt = {
       { label: 'Expert em Shopify' },
     ],
   },
-  links: {
-    linkedin: 'https://www.linkedin.com/in/vinicius-barbo/?locale=en-US',
-    github: 'https://github.com/vbarbo-dev',
-    email: 'vinicius@vbarbo.com.br',
+  about: {
+    textTitle: 'Sobre',
+    text: 'Eu projeto e construo soluções de e-commerce de alta performance para marcas globais. Com mais de 6 anos de mercado, foco na intersecção entre excelência técnica e impacto comercial, garantindo que as lojas não sejam apenas bonitas, mas otimizadas para conversão e escala.',
+    cards: [
+      { title: '6+', desc: 'Anos de exp.' },
+      { title: '40+', desc: 'Lojas entregues' },
+      { title: 'Shopify', desc: 'Plataforma principal' },
+      { title: 'Global', desc: 'Disponibilidade' },
+    ]
   },
+  footer: {
+    copy: '© 2026 vBarbo',
+    rights: 'Todos os direitos reservados.',
+    top: 'Voltar ao topo',
+  }
 };
