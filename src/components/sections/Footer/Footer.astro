@@ -1,0 +1,16 @@
+---
+import { ArrowUp } from 'lucide-astro';
+const { footer } = Astro.props;
+---
+
+<footer class="footer container">
+  <div class="copyright">
+    <div class="copy">{footer.copy}</div>
+    <div class="rights">{footer.rights}</div>
+  </div>
+
+  <button class="back-to-top">
+    {footer.top}
+    <ArrowUp />
+  </button>
+</footer>
