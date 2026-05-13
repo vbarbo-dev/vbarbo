@@ -1,0 +1,25 @@
+---
+import { Linkedin, Github, Mail } from 'lucide-astro';
+const { links, hero } = Astro.props;
+---
+
+<div class="bottom-infos">
+
+  <div class="social">
+    <div class="section-title">{hero.bottomTitle}</div>
+    
+    <div class="links">
+      <a href={links.linkedin} class="icon"><Linkedin /></a>
+      <a href={links.github} class="icon"><Github /></a>
+      <a href={`mailto:${links.email}`} class="icon"><Mail /></a>
+    </div>
+  </div>
+
+  <div class="divisor"></div>
+
+  <div class="badges">
+    {hero.badges.map((badge: { label: string }) => (
+      <span class="badge">{badge.label}</span>
+    ))}
+  </div>
+</div>

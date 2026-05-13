@@ -1,1 +1,15 @@
-<h1>Olá mundo!</h1>
+---
+import UpperInfos from './UpperInfos.astro';
+import MainInfos from './MainInfos.astro';
+import Actions from './Actions.astro';
+import BottomInfos from './BottomInfos.astro';
+
+const { hero, links } = Astro.props;
+---
+
+<section class="section hero container">
+  <UpperInfos hero={hero} />
+  <MainInfos hero={hero} />
+  <Actions hero={hero} />
+  <BottomInfos hero={hero} links={links} />
+</section>
