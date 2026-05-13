@@ -4,10 +4,15 @@ import { en } from '../../i18n/en';
 const t = en;
 const lang = 'en';
 
-import Header from '../../components/sections/Header/Header.astro';
 import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/sections/Header/Header.astro';
+import Hero from '../../components/sections/Hero/Hero.astro';
 ---
 
 <Layout>
   <Header t={t} lang={lang} />
+
+  <main>
+    <Hero hero={t.hero} links={t.links} lang={lang} />
+  </main>
 </Layout>
