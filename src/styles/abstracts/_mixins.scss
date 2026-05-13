@@ -1,0 +1,25 @@
+@mixin text-gradient(
+  $from,
+  $to,
+  $direction: 180deg
+) {
+  background: linear-gradient(
+    $direction,
+    $from 0%,
+    $to 100%
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@mixin color-mix-bg(
+  $color,
+  $opacity: 10%
+) {
+  background-color: color-mix(
+    in oklab,
+    $color $opacity,
+    transparent
+  );
+}

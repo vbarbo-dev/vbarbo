@@ -2,6 +2,7 @@
   padding: 1.6rem;
   border: 1px solid;
   font-size: 1.4rem;
+  margin-bottom: 4rem;
   border-color: color-mix(in oklab, var(--color-black) 5%, transparent);
   background-color: color-mix(in oklab, var(--color-white) 70%, transparent);
 
@@ -44,7 +45,7 @@
 
     .action {
       padding: 1rem 1.2rem;
-      border-radius: 999px;
+      border-radius: var(--radius-round);
       border: 1px solid;
       display: flex;
       align-items: center;

@@ -1,0 +1,120 @@
+@use '../../../abstracts/mixins' as *;
+
+.hero > .upper {
+  margin-bottom: .8rem;
+  display: flex;
+  gap: .8rem;
+  align-items: center;
+  width: fit-content;
+  border-radius: var(--radius-round);
+  padding: .6rem 1.2rem;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  color: #71717b;
+  background-color: #f5f4f4;
+  border: 1px solid #0000000d;
+
+  .dot {
+    display: block;
+    width: .8rem;
+    height: .8rem;
+    border-radius: 100%;
+    background-color: var(--color-drac-purple);
+  }
+}
+
+.hero > .main-infos {
+  max-width: 128rem;
+
+  .title,
+  .text {
+    font-size: 9.6rem;
+    font-weight: 700;
+    line-height: 105px;
+    letter-spacing: -2.4px;
+    font-family: var(--font-display);
+  }
+
+  .text {
+    @include text-gradient(#000000, #5c5c5c, 185deg);
+  }
+
+  .desc {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-top: 2.4rem;
+    line-height: 3.2rem;
+    color: #71717b;
+    max-width: 45%;
+  }
+}
+
+.hero > .actions {
+  display: flex;
+  gap: 1.6rem;
+  margin-top: 3.2rem;
+  align-items: center;
+
+  .btn {
+    font-size: 1.8rem;
+    padding: 2rem 3.2rem;
+  }
+}
+
+.hero > .bottom-infos {
+  margin-top: 3.2rem;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+
+  .section-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    color: var(--color-brand-secondary);
+  }
+
+  .links {
+    display: flex;
+    gap: 1.6rem;
+  }
+
+  .lucide {
+    width: 2rem;
+    height: 2rem;
+    color: var(--color-brand-secondary);
+  }
+
+  .divisor {
+    width: 1px;
+    display: flex;
+    opacity: .6;
+    align-self: stretch;
+    margin-block: .8rem;
+    background-color: var(--gray-2);
+  }
+
+  .badges {
+    display: flex;
+    gap: .8rem;
+  }
+
+  .badge {
+    font-size: 1rem;
+    font-weight: 700;
+    padding: .4rem 1.2rem;
+    color: var(--color-drac-purple);
+    border-radius: var(--radius-round);
+    border: 1px solid rgba(0 0 0 / 0.05);
+
+    @include color-mix-bg(var(--color-drac-purple), 5%);
+
+    &:nth-child(2n) {
+      color: var(--color-drac-cyan);
+      @include color-mix-bg(var(--color-drac-cyan), 5%)
+    }
+  }
+}
