@@ -1,0 +1,50 @@
+.about {
+  display: grid;
+  gap: 6.4rem;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.about > .content {
+  .text {
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 4.2rem;
+    color: var(--color-zinc-700);
+  }
+}
+
+.about > .cards {
+  display: grid;
+  gap: 1.6rem;
+  font-family: var(--font-display);
+  grid-template-columns: repeat(2, 1fr);
+
+  .card {
+    display: flex;
+    gap: .8rem;
+    flex-direction: column;
+    padding: 2.4rem;
+    border: 1px solid;
+    border-radius: 1.6rem;
+    box-shadow:  0 0 20px 0 rgba(0,0,0,.09);
+    border-color: color-mix(in oklab, var(--color-black) 5%, transparent);
+
+    transition: var(--transition);
+    &:hover { transform: translateY(-5px) }
+  }
+
+  .card-title {
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--color-zinc-900);
+  }
+
+  .card-desc {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: .6px;
+    text-transform: uppercase;
+    color: var(--color-zinc-400);
+  }
+}
