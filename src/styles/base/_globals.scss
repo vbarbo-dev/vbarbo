@@ -1,3 +1,5 @@
+@use '../abstracts/mixins' as *;
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 
@@ -58,6 +60,12 @@
 }
 
 .-hidden { display: none !important }
+.-hidden-desktop {
+  @include media('md') { display: none !important }
+}
+.-hidden-mobile {
+  @include media('xs') { display: none !important }
+}
 
 html {
   color: var(--font-color-base);
