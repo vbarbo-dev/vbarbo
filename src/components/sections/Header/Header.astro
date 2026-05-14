@@ -1,16 +1,16 @@
 ---
 import Menu from "./Menu.astro"
 import Actions from "./Actions.astro"
+import Logo from "./Logo.astro";
 const { t, lang } = Astro.props;
 ---
 
 <header class="header">
   <nav class="container">
-    <div class="logo">
-      <span class="text-logo">vB</span>
-    </div>
-
-    <Menu t={t} />
+    <Logo t={t} />
+    <Menu t={t} lang={lang} />
     <Actions t={t} lang={lang} />
   </nav>
 </header>
+
+<script src="../../../scripts/menu.ts"></script>
