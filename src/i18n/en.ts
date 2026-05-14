@@ -18,6 +18,8 @@ export const en = {
     text: 'Building scalable e-commerce experiences.',
     description: '6+ years of experience specialized in enterprise Shopify stores, performance optimization, and custom Liquid storefronts.',
     bottomTitle: 'Social',
+    contact: 'Contact Me',
+    projects: 'View Projects',
     badges: [
       { label: '+6 Years Experience' },
       { label: 'Shopify Expert' },

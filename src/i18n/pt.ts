@@ -13,11 +13,13 @@ export const pt = {
     email: 'vinicius@vbarbo.com.br',
   },
   hero: {
-    upper: 'Engenheiro Frontend | Especialista em E-commerce',
+    upper: 'Engenheiro Frontend | Especialista E-comm',
     title: 'Vinicius Barbo',
     text: 'Construindo experiências de e-commerce escaláveis.',
     description: 'Mais de 6 anos de experiência especializado em lojas Shopify enterprise, otimização de performance e lojas customizadas em Liquid.',
     bottomTitle: 'Redes',
+    contact: 'Entre em contato',
+    projects: 'Ver projetos',
     badges: [
       { label: '+6 Anos de Experiência' },
       { label: 'Expert em Shopify' },
@@ -35,7 +37,7 @@ export const pt = {
   },
   footer: {
     copy: '© 2026 vBarbo',
-    rights: 'Todos os direitos reservados.',
+    rights: 'Todos direitos reservados.',
     top: 'Voltar ao topo',
   }
 };

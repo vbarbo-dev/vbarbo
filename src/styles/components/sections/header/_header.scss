@@ -1,13 +1,16 @@
 @use '../../../abstracts/mixins' as *;
 
 .header {
-  position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 20;
   padding: 1.6rem 0;
   border: 1px solid;
   font-size: 1.4rem;
   margin-bottom: 4rem;
   border-color: color-mix(in oklab, var(--color-black) 5%, transparent);
-  background-color: color-mix(in oklab, var(--color-white) 70%, transparent);
+  backdrop-filter: blur(20px);
+  background: rgba(255,255,255,.7);
 
   > .container {
     display: flex;
@@ -111,14 +114,13 @@
       position: absolute;
       gap: 1.6rem;
       left: 0;
-      top: calc(100% + 2px);
+      top: calc(100%);
 
       opacity: 0;
       visibility: hidden;
       pointer-events: none;
-      backdrop-filter: blur(20px);
       transform: translateY(-10px);
-      background: rgba(255,255,255,.7);
+      background-color: var(--color-white);
 
       transition:
         opacity .3s ease,

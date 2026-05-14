@@ -1,4 +1,8 @@
+---
+const { hero } = Astro.props;
+---
+
 <div class="actions">
-  <a href="#contact" class="btn">Entre em contato</a>
-  <a href="#projects" class="btn -white">Ver projetos</a>
+  <a href="#contact" class="btn">{hero.contact}</a>
+  <a href="#projects" class="btn -white">{hero.projects}</a>
 </div>

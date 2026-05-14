@@ -1,16 +1,28 @@
+@use '../../../abstracts/mixins' as *;
+
 .about {
   display: grid;
-  gap: 6.4rem;
+  gap: 2.4rem;
   align-items: center;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
+
+  @include media('md') {
+    gap: 6.4rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .about > .content {
   .text {
-    font-size: 3rem;
+    font-size: 2.4rem;
     font-weight: 300;
-    line-height: 4.2rem;
+    line-height: 3.9rem;
     color: var(--color-zinc-700);
+
+    @include media('md') {
+      font-size: 3rem;
+      line-height: 4.2rem;
+    }
   }
 }
 

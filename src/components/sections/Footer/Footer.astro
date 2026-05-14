@@ -9,8 +9,10 @@ const { footer } = Astro.props;
     <div class="rights">{footer.rights}</div>
   </div>
 
-  <button class="back-to-top">
+  <button class="back-to-top" data-back-to-top>
     {footer.top}
     <ArrowUp />
   </button>
 </footer>
+
+<script src="../../../scripts/backTop.ts"></script>
