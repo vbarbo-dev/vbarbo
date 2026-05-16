@@ -37,12 +37,8 @@
     gap: .8rem;
     flex-direction: column;
     padding: 2.4rem;
-    border: 1px solid;
-    border-radius: 1.6rem;
-    box-shadow:  0 0 20px 0 rgba(0,0,0,.09);
-    border-color: color-mix(in oklab, var(--color-black) 5%, transparent);
+    @include card-style;
 
-    transition: var(--transition);
     &:hover { transform: translateY(-5px) }
   }
 
