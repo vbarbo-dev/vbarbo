@@ -1,0 +1,9 @@
+---
+import { CircleCheck } from 'lucide-astro';
+const { contact } = Astro.props;
+---
+
+<div class="contact-head">
+  <h2 class="title">{ contact.headTitle }</h2>
+  <p class="desc"><CircleCheck /> { contact.headDesc }</p>
+</div>

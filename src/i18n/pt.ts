@@ -35,6 +35,16 @@ export const pt = {
       { title: 'Global', desc: 'Disponibilidade' },
     ]
   },
+  contact: {
+    headTitle: 'Vamos construir experiências de e-commerce escaláveis.',
+    headDesc: 'Disponível para novas oportunidades',
+    formName: 'Nome',
+    formEmail: 'E-mail',
+    formMessage: 'Mensagem',
+    formButton: 'Enviar Mensagem',
+    findMe: 'Encontre-me em',
+    mail: 'Email direto',
+  },
   footer: {
     copy: '© 2026 vBarbo',
     rights: 'Todos direitos reservados.',

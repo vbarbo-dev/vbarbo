@@ -1,0 +1,15 @@
+---
+import ContactHead from "./ContactHead.astro";
+import Form from "./Form.astro";
+import Social from "./Social.astro";
+const { contact, links } = Astro.props;
+---
+
+<section class="section contact container">
+  <ContactHead  contact={contact}/>
+
+  <div class="content">
+    <Form contact={contact} />
+    <Social contact={contact} links={links} />
+  </div>
+</section>

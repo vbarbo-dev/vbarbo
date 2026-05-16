@@ -35,6 +35,16 @@ export const en = {
       { title: 'Worldwide', desc: 'Availability' },
     ]
   },
+  contact: {
+    headTitle: "Let's build scalable e-commerce experiences.",
+    headDesc: 'Available for new opportunities',
+    formName: 'Name',
+    formEmail: 'Email',
+    formMessage: 'Message',
+    formButton: 'Send Message',
+    findMe: 'Find me on',
+    mail: 'Direct email',
+  },
   footer: {
     copy: '© 2026 vBarbo',
     rights: 'All rights reserved',

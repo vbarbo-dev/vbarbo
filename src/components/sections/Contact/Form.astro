@@ -1,0 +1,16 @@
+---
+const { contact } = Astro.props;
+---
+
+<form class="contact-form">
+  <div class="inputs">
+    <input type="text" class="input" placeholder={ contact.formName }>
+    <input type="email" class="input" placeholder={ contact.formEmail }>
+  </div>
+
+  <div class="text">
+    <textarea name="message" class="textarea" placeholder={ contact.formMessage }></textarea>
+  </div>
+
+  <button class="btn">{ contact.formButton }</button>
+</form>
