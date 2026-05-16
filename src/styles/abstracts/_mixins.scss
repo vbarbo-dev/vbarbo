@@ -51,3 +51,18 @@
     transparent
   );
 }
+
+@mixin card-style {
+  border: 1px solid;
+  border-radius: 1.6rem;
+  transition: var(--transition);
+  background-color: var(--color-white);
+  box-shadow:
+    0 1px 3px 0 rgb(0 0 0 / 0.1),
+    0 1px 2px -1px rgb(0 0 0 / 0.1);
+  border-color: color-mix(in oklab, var(--color-black) 5%, transparent);
+
+  &:hover {
+    border-color: color-mix(in oklab, var(--color-drac-purple) 30%, transparent);
+  }
+}

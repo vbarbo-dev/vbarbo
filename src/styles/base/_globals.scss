@@ -31,6 +31,8 @@
   font-weight: 600;
   display: flex;
   gap: .6rem;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   padding: 1rem 1.2rem;
   border-radius: var(--radius-round);
@@ -107,14 +109,34 @@ a {
 
 a,
 button,
-input {
+input,
+textarea {
   border: 0;
   border-radius: 0;
   padding: 0;
   -webkit-appearance: none;
 
   &:focus {
-    //configurar
+    outline: none;
+  }
+}
+
+.input,
+.textarea {
+  padding: 1.6rem;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  @include card-style;
+  color: var(--color-zinc-900);
+  background-color: var(--color-white);
+
+  &::placeholder {
+    color: var(--color-zinc-400);
+  }
+
+  &:focus {
+    border-color: color-mix(in oklab, var(--color-drac-purple) 30%, transparent);
   }
 }
 
