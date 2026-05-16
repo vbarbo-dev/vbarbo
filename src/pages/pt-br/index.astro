@@ -4,11 +4,20 @@ import { pt } from '../../i18n/pt';
 const t = pt;
 const lang = 'pt';
 
+// Layout - Header
 import Layout from '../../layouts/Layout.astro';
 import Header from '../../components/sections/Header/Header.astro';
+
+// Sections
 import Hero from '../../components/sections/Hero/Hero.astro';
 import About from '../../components/sections/About/About.astro';
+import Expertise from '../../components/sections/Expertise/Expertise.astro';
+import Technical from '../../components/sections/Technical/Technical.astro';
+import Experience from '../../components/sections/Experience/Experience.astro';
+import Projects from '../../components/sections/Projects/Projects.astro';
+import Contact from '../../components/sections/Contact/Contact.astro';
 
+// Footer
 import Footer from '../../components/sections/Footer/Footer.astro'
 ---
 
@@ -18,6 +27,7 @@ import Footer from '../../components/sections/Footer/Footer.astro'
   <main>
     <Hero hero={t.hero} links={t.links} lang={lang} />
     <About about={t.about} lang={lang} />
+    <Contact contact={t.contact} links={t.links} lang={lang} />
   </main>
   
   <Footer footer={t.footer} lang={lang} />
