@@ -3,8 +3,8 @@ import { Globe, Download } from 'lucide-astro';
 
 const { lang } = Astro.props;
 
-const switchLang = lang === 'pt' ? '/en' : '/pt-br';
-const switchLabel = lang === 'pt' ? 'EN' : 'PT-BR';
+const switchLang = lang === 'pt' ? '/en' : '/';
+const switchLabel = lang === 'pt' ? 'PT-BR' : 'EN';
 
 const resumeLabel = lang === 'pt' ? 'Currículo' : 'Resume'
 const resumeLink =
