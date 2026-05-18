@@ -36,7 +36,7 @@ export const pt = {
     ]
   },
   contact: {
-    headTitle: 'Vamos construir experiências de e-commerce escaláveis.',
+    headTitle: 'Vamos construir um projeto de respeito juntos?',
     headDesc: 'Disponível para novas oportunidades',
     formName: 'Nome',
     formEmail: 'E-mail',
