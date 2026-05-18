@@ -2,15 +2,64 @@
 const { contact } = Astro.props;
 ---
 
-<form class="contact-form">
+<form class="contact-form" data-contact-form>
+  <input
+    type="text"
+    name="website"
+    tabindex="-1"
+    autocomplete="off"
+    style="display:none;"
+  >
+
   <div class="inputs">
-    <input type="text" class="input" placeholder={ contact.formName }>
-    <input type="email" class="input" placeholder={ contact.formEmail }>
+    <input type="text" name="name" class="input" placeholder={ contact.formName }>
+    <input type="email" name="email" class="input" placeholder={ contact.formEmail }>
   </div>
 
   <div class="text">
     <textarea name="message" class="textarea" placeholder={ contact.formMessage }></textarea>
   </div>
 
-  <button class="btn">{ contact.formButton }</button>
+  <button class="btn" type="submit">{ contact.formButton }</button>
 </form>
+
+<script type="module">
+  const form = document.querySelector('[data-contact-form]');
+
+  if (form instanceof HTMLFormElement) {
+  const button = form.querySelector('button');
+
+  form.addEventListener('submit', async (event) => {
+    event.preventDefault();
+
+    if (!(button instanceof HTMLButtonElement)) return;
+
+    button.disabled = true;
+
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData.entries());
+
+    // Honeypot anti-spam
+    if (data.website) return;
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (!response.ok) { throw new Error( 'Erro ao enviar') }
+
+      console.info('Mensagem enviada');
+      form.reset();
+    } catch (error) {
+      console.error(error);
+    } finally {
+      button.disabled = false;
+    }
+    });
+  }
+</script>
