@@ -14,11 +14,11 @@ const resumeLink =
 ---
 
 <div class="actions">
-  <a href={switchLang} class="action -lang">
+  <a href={switchLang} title=`${lang === 'pt' ? 'Português Brasileiro' : 'English'}` class="action -lang">
     <Globe />
     {switchLabel}
   </a>
-  <a href={resumeLink} class="action -resume" download>
+  <a href={resumeLink} title=`${lang === 'pt' ? 'Baixar currículo' : 'Downlod resume'}` class="action -resume" download>
     <Download />
     {resumeLabel}
   </a>

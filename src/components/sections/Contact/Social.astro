@@ -8,11 +8,11 @@ const { contact, links } = Astro.props;
     <div class="text">{ contact.findMe }</div>
 
     <div class="cards">
-      <a href={links.linkedin} class="card">
+      <a href={links.linkedin} title="LinkedIn" class="card">
         <div class="social"><div class="icon"><Linkedin /></div> LinkedIn</div>
         <div class="external"><ExternalLink /></div>
       </a>
-      <a href={links.github} class="card">
+      <a href={links.github} title="GitHub" class="card">
         <div class="social"><div class="icon"><Github /></div> GitHub</div>
         <div class="external"><ExternalLink /></div>
       </a>
@@ -21,6 +21,6 @@ const { contact, links } = Astro.props;
 
   <div class="bottom">
     <div class="text">{ contact.mail }</div>
-    <a href=`mailto:${links.email}` class="email">{links.email} <ChevronRight /></a>
+    <a href=`mailto:${links.email}` title="E-mail" class="email">{links.email} <ChevronRight /></a>
   </div>
 </div>

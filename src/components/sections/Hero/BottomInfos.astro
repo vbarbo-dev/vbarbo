@@ -9,9 +9,9 @@ const { links, hero } = Astro.props;
     <div class="section-title">{hero.bottomTitle}</div>
     
     <div class="links">
-      <a href={links.linkedin} class="icon"><Linkedin /></a>
-      <a href={links.github} class="icon"><Github /></a>
-      <a href={`mailto:${links.email}`} class="icon"><Mail /></a>
+      <a href={links.linkedin} title="LinkedIn" class="icon"><Linkedin /></a>
+      <a href={links.github} title="GitHub" class="icon"><Github /></a>
+      <a href={`mailto:${links.email}`} title="Email" class="icon"><Mail /></a>
     </div>
   </div>
 

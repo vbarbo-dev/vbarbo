@@ -3,6 +3,6 @@ const { hero } = Astro.props;
 ---
 
 <div class="actions">
-  <a href="#contact" class="btn">{hero.contact}</a>
-  <a href="#projects" class="btn -white">{hero.projects}</a>
+  <a href="#contact" title={hero.contact} class="btn">{hero.contact}</a>
+  <a href="#projects" title={hero.projects} class="btn -white">{hero.projects}</a>
 </div>

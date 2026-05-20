@@ -8,7 +8,7 @@ export const pt = {
     contact: 'Contato',
   },
   links: {
-    linkedin: 'https://www.linkedin.com/in/vinicius-barbo/?locale=en-US',
+    linkedin: 'https://www.linkedin.com/in/vinicius-barbo/',
     github: 'https://github.com/vbarbo-dev',
     email: 'vinicius@vbarbo.com.br',
   },
