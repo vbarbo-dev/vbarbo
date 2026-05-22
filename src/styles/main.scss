@@ -2,8 +2,14 @@
 @use './base/variables' as *;
 @use './base/globals' as *;
 
+@use './components/section_head';
+@use './components/cards';
+
 @use './components/sections/header/header';
 @use './components/sections/hero/hero';
 @use './components/sections/about/about';
+@use './components/sections/technical/technical';
+@use './components/sections/experience/experience';
+@use './components/sections/projects/projects';
 @use './components/sections/contact/contact';
 @use './components/sections/footer/footer';

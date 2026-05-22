@@ -1,0 +1,35 @@
+---
+import type { Job } from '../../../i18n/types';
+
+interface Props {
+  jobs: Job[];
+}
+
+const { jobs } = Astro.props as Props;
+---
+
+<div class="jobs">
+  {jobs.map((job) => {
+    return(
+      <div class="job">
+        <div class="infos">
+          <div class="period color-drac-purple">{job.start} — {job.end}</div>
+          <div class="company">{job.company}</div>
+          <div class="role">{job.role}</div>
+
+          <div class="tags">
+            {job.tags.map(tag => {
+              return(<div class="tag">{tag}</div>)
+            })}
+          </div>
+        </div>
+
+        <ul class="bullets">
+          {job.bullets.map(bullet => {
+            return(<li class="bullet">{bullet}</li>)
+          })}
+        </ul>
+      </div>
+    );
+  })}
+</div>

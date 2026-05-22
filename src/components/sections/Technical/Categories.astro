@@ -1,0 +1,30 @@
+---
+import type { Category } from '../../../i18n/types';
+
+interface Props {
+  categories: Category[];
+}
+
+const { categories } = Astro.props as Props;
+---
+
+<div class="categories" style="">
+  {categories.map((category) => {
+    const Icon = category.icon;
+
+    return (
+      <div class="category">
+        <h3 class="category-title">
+          {Icon && (<div class={`icon ${category.color}`}><Icon /></div>)}
+          {category.title}
+        </h3>
+
+        <ul class="stack">
+          {category.items.map((item) => (
+            <li class="item">{item}</li>
+          ))}
+        </ul>
+      </div>
+    );
+  })}
+</div>

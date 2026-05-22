@@ -1,0 +1,53 @@
+@use '../abstracts/mixins' as *;
+
+.cards {
+  display: grid;
+  gap: 1.6rem;
+  grid-template-columns: repeat(1, 1fr);
+
+  @include media('md') {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .icon {
+    width: 4.8rem;
+    height: 4.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid;
+    border-radius: 1.6rem;
+    background-color: var(--color-zinc-50);
+    border-color: color-mix(in oklab, var(--color-black) 5%, transparent);
+
+    .lucide {
+      width: 2.4rem;
+      height: 2.4rem;
+    }
+  }
+
+  .card {
+    display: flex;
+    gap: .8rem;
+    flex-direction: column;
+    padding: 3.2rem;
+    @include card-style;
+
+    &:hover { transform: translateY(-5px) }
+  }
+
+  .card-title {
+    font-size: 2rem;
+    font-weight: 700;
+    padding-right: 1.6rem;
+    color: var(--color-zinc-900);
+    font-family: var(--font-display);
+  }
+
+  .card-desc {
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: normal;
+    color: var(--color-zinc-500);
+  }
+}

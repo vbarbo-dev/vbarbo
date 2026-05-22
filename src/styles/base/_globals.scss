@@ -20,7 +20,7 @@
 }
 
 .section {
-  margin-bottom: 4rem;
+  margin-bottom: 8rem;
 }
 
 .color-drac-purple { color: var(--color-drac-purple) }
@@ -53,15 +53,6 @@
       background-color: var(--gray-1);
     }
   }
-}
-
-.main-title {
-  font-weight: 700;
-  margin-bottom: 3.2rem;
-  letter-spacing: 1.4px;
-  text-transform: uppercase;
-  color: var(--color-drac-purple);
-  font-size: var(--font-size-base);
 }
 
 .-hidden { display: none !important }

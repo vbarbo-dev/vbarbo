@@ -1,6 +1,10 @@
 ---
+import SectionHead from '../../ui/SectionHead.astro';
+import Jobs from './Jobs.astro';
 const { experience } = Astro.props;
 ---
 
 <section class="section experience container">
+  <SectionHead section={experience} />
+  <Jobs jobs={experience.jobs}/>
 </section>

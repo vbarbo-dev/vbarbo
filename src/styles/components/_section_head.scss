@@ -1,0 +1,26 @@
+@use '../abstracts/mixins' as *;
+
+.section-head {
+  margin-bottom: 3rem;
+
+  .main-title {
+    font-weight: 700;
+    margin-bottom: 3.2rem;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: var(--color-drac-purple);
+    font-size: var(--font-size-base);
+  }
+
+  .text {
+    font-size: 2.4rem;
+    font-weight: 300;
+    line-height: 3.9rem;
+    color: var(--color-zinc-700);
+
+    @include media('md') {
+      font-size: 2.4rem;
+      line-height: 4.2rem;
+    }
+  }
+}

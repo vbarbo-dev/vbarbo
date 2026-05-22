@@ -1,0 +1,115 @@
+@use '../../../abstracts/mixins' as *;
+
+.projects > .head {
+  display: flex;
+  margin-bottom: 3rem;
+  flex-direction: column;
+
+  @include media('md') {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  .section-head {
+    @include media('md') {
+      max-width: 50%;
+      margin-bottom: 0;
+    }
+  }
+
+  .disclaimer {
+    max-width: 20rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-style: italic;
+    line-height: 19.5px;
+    color: var(--color-zinc-400);
+  }
+}
+
+.projects > .cards {
+  grid-template-columns: repeat(1, 1fr);
+
+  @include media('md') {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .card {
+    position: relative;
+  }
+
+  .external-arrow {
+    position: absolute;
+    right: 3.2rem;
+    top: 3.2rem;
+
+    .lucide {
+      width: 2.4rem;
+      height: 2.4rem;
+      color: var(--color-zinc-300);
+    }
+  }
+
+  .icon .lucide {
+    color: var(--color-zinc-400);
+  }
+
+  .card-title {
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 32px;
+    margin-bottom: 1.6rem;
+  }
+
+  .card-desc {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 22px;
+    margin-bottom: 2.4rem;
+  }
+
+  .card-impact {
+    padding: 1.6rem;
+    border: 1px solid;
+    border-radius: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+    background-color: var(--color-zinc-50);
+    border-color: color-mix(in oklab, var(--color-black) 5%, transparent);
+
+    .impact {
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: var(--font-color-900);
+      font-family: var(--font-display);
+    }
+
+    .impact-desc {
+      font-size: 1rem;
+      font-weight: 700;
+      line-height: 15px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      color: var(--color-zinc-400);
+    }
+  }
+
+  .card-tags {
+    margin-top: 3.2rem;
+    padding-top: 2.4rem;
+    border-top: 1px solid;
+    border-color: color-mix(in oklab, var(--color-black) 5%, transparent);
+
+    display: flex;
+    gap: .8rem;
+
+    .tag {
+      font-size: 1rem;
+      line-height: 15px;
+      color: var(--color-zinc-400);
+      font-family: var(--font-mono);
+    }
+  }
+}

@@ -1,6 +1,14 @@
 ---
+import SectionHead from '../../ui/SectionHead.astro';
+import Cards from './Cards.astro';
 const { projects } = Astro.props;
 ---
 
 <section class="section projects container">
+  <div class="head">
+    <SectionHead section={projects} />
+    <div class="disclaimer">{projects.disclaimer}</div>
+  </div>
+
+  <Cards cards={projects.cards}/>
 </section>

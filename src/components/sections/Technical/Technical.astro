@@ -1,6 +1,10 @@
 ---
+import SectionHead from '../../ui/SectionHead.astro';
+import Categories from './Categories.astro';
 const { technical } = Astro.props;
 ---
 
 <section class="section technical container">
+  <SectionHead section={technical} />
+  <Categories categories={technical.categories}/>
 </section>

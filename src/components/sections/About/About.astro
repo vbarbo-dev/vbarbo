@@ -1,10 +1,10 @@
 ---
-import Content from './Content.astro';
+import SectionHead from '../../ui/SectionHead.astro';
 import Cards from './Cards.astro';
 const { about } = Astro.props;
 ---
 
 <section class="section about container">
-  <Content about={about} />
+  <SectionHead section={about} />
   <Cards about={about} />
 </section>

@@ -1,0 +1,94 @@
+@use '../../../abstracts/mixins' as *;
+
+.experience > .jobs {
+  display: grid;
+  gap: 3.2rem;
+  grid-template-columns: repeat(1, 1fr);
+
+  .job {
+    @include card-style;
+    padding: 3.2rem;
+    display: grid;
+    gap: 3.2rem;
+    border-radius: 2.4rem;
+    grid-template-columns: repeat(1, 1fr);
+
+    @include media('md') {
+      grid-template-columns: 1.2fr 2fr;
+    }
+    
+    &:hover { transform: translateY(-5px) }
+    &:hover .bullets .bullet:before { opacity: 1 }
+  }
+
+  .period {
+    font-size: 1.2rem;
+    line-height: 16px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    margin-bottom: 1.6rem;
+    text-transform: uppercase;
+  }
+
+  .company {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 32px;
+    margin-bottom: .4rem;
+    color: var(--color-zinc-900);
+  }
+
+  .role {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 1.6rem;
+    color: var(--color-zinc-500);
+  }
+
+  .tags {
+    display: flex;
+    gap: .8rem;
+    flex-wrap: wrap;
+
+    .tag {
+      font-size: 1rem;
+      font-weight: 500;
+      line-height: 15px;
+      padding: .2rem .8rem;
+      border: 1px solid;
+      border-radius: .4rem;
+      color: var(--color-zinc-500);
+      transition: var(--transition);
+      background-color: var(--color-zinc-100);
+      border-color: color-mix(in oklab, var(--color-black) 5%, transparent);
+
+      &:hover {
+        color: var(--color-zinc-900);
+        border-color: color-mix(in oklab, var(--color-black) 20%, transparent);
+      }
+    }
+  }
+
+  .bullets .bullet {
+    display: flex;
+    gap: .8rem;
+    align-items: center;
+    margin-bottom: 1.2rem;
+
+    font-size: 1.4rem;
+    line-height: 22px;
+    color: var(--color-zinc-600);
+
+    &:before {
+      content: '';
+      display: block;
+      width: .6rem;
+      height: .6rem;
+      opacity: .5;
+      border-radius: 100%;
+      transition: var(--transition);
+      background-color: var(--color-drac-purple);
+    }
+  }
+}

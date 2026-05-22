@@ -1,0 +1,48 @@
+@use '../../../abstracts/mixins' as *;
+
+.technical > .categories {
+  display: grid;
+  gap: 3.2rem;
+  grid-template-columns: repeat(1, 1fr);
+
+  @include media('md') {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .category-title {
+    display: flex;
+    gap: .8rem;
+    align-items: center;
+    margin-bottom: 2.4rem;
+  }
+
+  .icon,
+  .icon .lucide {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .stack {
+    display: flex;
+    gap: .8rem;
+    flex-wrap: wrap;
+  }
+
+  .stack .item {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 16px;
+    padding: .6rem 1.2rem;
+    border: 1px solid;
+    border-radius: .8rem;
+    color: var(--color-zinc-500);
+    transition: var(--transition);
+    background-color: var(--color-zinc-50);
+    border-color: color-mix(in oklab, var(--color-black) 5%, transparent);
+
+    &:hover {
+      color: var(--color-zinc-900);
+      border-color: color-mix(in oklab, var(--color-black) 20%, transparent);
+    }
+  }
+}

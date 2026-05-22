@@ -12,18 +12,12 @@
   }
 }
 
-.about > .content {
-  .text {
-    font-size: 2.4rem;
-    font-weight: 300;
-    line-height: 3.9rem;
-    color: var(--color-zinc-700);
+.about > .section-head {
+  margin-bottom: 0;
+}
 
-    @include media('md') {
-      font-size: 3rem;
-      line-height: 4.2rem;
-    }
-  }
+.about > .section-head .text {
+  @include media('md') { font-size: 3rem }
 }
 
 .about > .cards {

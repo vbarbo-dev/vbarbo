@@ -1,3 +1,11 @@
+import {
+  ShoppingBag,
+  CodeXml,
+  Zap,
+  Layers,
+  Cpu,
+} from 'lucide-astro';
+
 export const pt = {
   nav: {
     about: 'Sobre',
@@ -26,7 +34,7 @@ export const pt = {
     ],
   },
   about: {
-    textTitle: 'Sobre',
+    title: 'Sobre',
     text: 'Eu projeto e construo soluções de e-commerce de alta performance para marcas globais. Com mais de 6 anos de mercado, foco na intersecção entre excelência técnica e impacto comercial, garantindo que as lojas não sejam apenas bonitas, mas otimizadas para conversão e escala.',
     cards: [
       { title: '6+', desc: 'Anos de exp.' },
@@ -34,6 +42,162 @@ export const pt = {
       { title: 'Shopify', desc: 'Plataforma principal' },
       { title: 'Global', desc: 'Disponibilidade' },
     ]
+  },
+  expertise: {
+    title: 'Especialidades',
+    text: 'Soluções técnicas especializadas para o varejo enterprise.',
+    cards: [
+      {
+        icon: ShoppingBag,
+        title: 'Desenvolvimento E-commerce',
+        desc: 'Criação de temas customizados e lojas headless com foco em core web vitals e conversão.'
+      },
+      {
+        icon: CodeXml,
+        title: 'Customização Shopify',
+        desc: 'Mergulho profundo em Liquid, OS 2.0 e Hydrogen para expandir os limites do Shopify.'
+      },
+      {
+        icon: Zap,
+        title: 'Otimização de Performance',
+        desc: 'Auditoria e correção de gargalos para atingir carregamentos abaixo de um segundo.'
+      },
+      {
+        icon: Layers,
+        title: 'Arquitetura Frontend',
+        desc: 'Projetando bibliotecas de componentes e design systems sob medida para o varejo de grande escala.'
+      },
+    ]
+  },
+  technical: {
+    title: 'Arsenal Técnico',
+    categories: [
+      {
+        icon: CodeXml,
+        color: 'color-drac-purple',
+        title: 'Frontend',
+        items: [
+          'JavaScript (ES6+)',
+          'TypeScript',
+          'HTML5/CSS3',
+          'SCSS',
+          'React',
+          'Vue.js',
+          'jQuery',
+        ]
+      },
+      {
+        icon: ShoppingBag,
+        color: 'color-drac-cyan',
+        title: 'E-commerce',
+        items: [
+          'Shopify (Liquid)',
+          'VTEX',
+          'VTEX IO',
+          'Salesforce Commerce Cloud',
+          'Linx Commerce',
+        ]
+      },
+      {
+        icon: Cpu,
+        color: 'color-drac-pink',
+        title: 'Ferramentas',
+        items: [
+          'Git',
+          'Node.js',
+          'Figma',
+          'Docker',
+          'Linux',
+          'Vite',
+          'Tailwind CSS',
+          'Bootstrap',
+        ]
+      }
+    ]
+  },
+  experience: {
+    title: 'Jornada Profissional',
+    jobs: [
+      {
+        company: 'Olist',
+        role: 'Desenvolvedor Frontend Pleno',
+        start: '2023',
+        end: '2026',
+        tags: ['Liquid', 'JavaScript (ES6+)', 'SCSS', 'Node.js'],
+        bullets: [
+          'Lorem ipsum',
+          'Lorem ipsum',
+          'Lorem ipsum',
+        ]
+      },
+      {
+        company: 'Veste',
+        role: 'Desenvolvedor Frontend Pleno',
+        start: '2021',
+        end: '2023',
+        tags: ['Liquid', 'JavaScript (ES6+)', 'SCSS', 'Node.js'],
+        bullets: [
+          'Lorem ipsum',
+          'Lorem ipsum',
+          'Lorem ipsum',
+        ]
+      },
+      {
+        company: 'Trinto',
+        role: 'Desenvolvedor Frontend Pleno',
+        start: '2021',
+        end: '2021',
+        tags: ['Liquid', 'JavaScript (ES6+)', 'SCSS', 'Node.js'],
+        bullets: [
+          'Lorem ipsum',
+          'Lorem ipsum',
+          'Lorem ipsum',
+        ]
+      },
+      {
+        company: 'DevDog',
+        role: 'Desenvolvedor Frontend Junior',
+        start: '2019',
+        end: '2021',
+        tags: ['Liquid', 'JavaScript (ES6+)', 'SCSS', 'Node.js'],
+        bullets: [
+          'Lorem ipsum',
+          'Lorem ipsum',
+          'Lorem ipsum',
+        ]
+      },
+    ],
+  },
+  projects: {
+    title: 'Projetos Selecionados',
+    text: 'Criando infraestrutura digital focada em conversão para varejistas globais.',
+    disclaimer: 'Devido a restrições de NDA, alguns projetos enterprise são exibidos com detalhes limitados.',
+    cards: [
+      { 
+        icon: ShoppingBag, 
+        title: 'Storefront Varejo Global', 
+        desc: 'Lorem ipsum', 
+        impact: '25%', 
+        impactDesc: 'Aumento em CR Mobile', 
+        tags: [ 'Lorem Ipsum', 'Lorem ipsum', 'Lorem ipsum' ],
+      },
+      { 
+        icon: ShoppingBag, 
+        title: 'Storefront Varejo Global', 
+        desc: 'Lorem ipsum', 
+        impact: '25%', 
+        impactDesc: 'Aumento em CR Mobile', 
+        tags: [ 'Lorem Ipsum', 'Lorem ipsum', 'Lorem ipsum' ],
+      },
+      { 
+        icon: ShoppingBag, 
+        title: 'Storefront Varejo Global', 
+        desc: 'Lorem ipsum', 
+        impact: '25%', 
+        impactDesc: 'Aumento em CR Mobile', 
+        tags: [ 'Lorem Ipsum', 'Lorem ipsum', 'Lorem ipsum' ],
+      },
+    ],
   },
   contact: {
     headTitle: 'Vamos construir um projeto de respeito juntos?',

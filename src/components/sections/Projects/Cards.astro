@@ -1,0 +1,36 @@
+---
+import type { Card } from '../../../i18n/types';
+import { ArrowUpRight } from 'lucide-astro';
+
+interface Props { 
+  cards: Card[] 
+}
+
+const { cards } = Astro.props as Props;
+---
+
+<div class="cards">
+  {cards.map((card) => {
+    const Icon = card.icon;
+
+    return (
+      <div class="card">
+        <div class="external-arrow"><ArrowUpRight /></div>
+        {Icon && (<div class="icon"><Icon /></div>)}
+        <span class="card-title">{card.title}</span>
+        <span class="card-desc">{card.desc}</span>
+
+        <div class="card-impact">
+          <span class="impact">{card.impact}</span>
+          <span class="impact-desc">{card.impactDesc}</span>
+        </div>
+
+        <div class="card-tags">
+          {card.tags.map(tag => {
+            return(<div class="tag">{tag}</div>)
+          })}
+        </div>
+      </div>
+    );
+  })}
+</div>

@@ -1,0 +1,23 @@
+---
+import type { Card } from '../../../i18n/types';
+
+interface Props { 
+  cards: Card[] 
+}
+
+const { cards } = Astro.props as Props;
+---
+
+<div class="cards">
+  {cards.map((card) => {
+    const Icon = card.icon;
+
+    return (
+      <div class="card">
+        {Icon && (<div class="icon"><Icon /></div>)}
+        <span class="card-title">{card.title}</span>
+        <span class="card-desc">{card.desc}</span>
+      </div>
+    );
+  })}
+</div>

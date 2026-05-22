@@ -1,6 +1,10 @@
 ---
+import SectionHead from '../../ui/SectionHead.astro';
+import Cards from './Cards.astro';
 const { expertise } = Astro.props;
 ---
 
 <section class="section expertise container">
+  <SectionHead section={expertise} />
+  <Cards cards={expertise.cards} />
 </section>
