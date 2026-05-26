@@ -1,5 +1,10 @@
 import type { AstroComponentFactory } from 'astro/runtime/server/index.js';
 
+export type Menu = {
+  title: string;
+  link: string;
+}
+
 export type Card = {
   icon?: AstroComponentFactory;
   title: string;

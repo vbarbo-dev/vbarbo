@@ -2,14 +2,14 @@
 import Menu from "./Menu.astro"
 import Actions from "./Actions.astro"
 import Logo from "./Logo.astro";
-const { t, lang } = Astro.props;
+const { t, menu, lang } = Astro.props;
 ---
 
 <header class="header">
   <nav class="container">
-    <Logo t={t} />
-    <Menu t={t} lang={lang} />
-    <Actions t={t} lang={lang} />
+    <Logo />
+    <Menu menu={menu} />
+    <Actions actions={t} lang={lang} />
   </nav>
 </header>
 
