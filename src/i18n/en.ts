@@ -1,3 +1,11 @@
+import {
+  ShoppingBag,
+  CodeXml,
+  Zap,
+  Layers,
+  Cpu,
+} from 'lucide-astro';
+
 export const en = {
   menu: [
     { title: 'Sobre', link: '#about' },
@@ -40,58 +48,72 @@ export const en = {
     text: 'Specialized technical solutions for enterprise retail.',
     cards: [
       {
-        icon: 'shopping-bag',
+        icon: ShoppingBag,
         title: 'E-commerce Development',
         desc: 'Building custom themes and headless storefronts with a focus on core web vitals and conversion.'
       },
       {
-        icon: 'code-xml',
+        icon: CodeXml,
         title: 'Shopify Customization',
         desc: 'Deep diving into Liquid, OS 2.0, and Hydrogen to push the boundaries of what Shopify can do.'
       },
       {
-        icon: 'zap',
+        icon: Zap,
         title: 'Performance Optimization',
         desc: 'Auditing and fixing performance bottlenecks to achieve sub-second load times and 90+ Lighthouse scores.'
       },
       {
-        icon: 'layers',
+        icon: Layers,
         title: 'Frontend Architecture',
         desc: 'Designing scalable component libraries and design systems tailored for large-scale retail.'
       },
     ]
   },
   technical: {
-    title: 'Technical Arsenal',
-    frontTitle: 'Frontend',
-    ecommerceTitle: 'E-commerce',
-    toolsTitle: 'Tools & Workflow',
-    frontend: [
-      'JavaScript (ES6+)',
-      'TypeScript',
-      'HTML5/CSS3',
-      'SCSS',
-      'React',
-      'Vue.js',
-      'jQuery',
-    ],
-    ecommerce: [
-     'Shopify (Liquid)',
-     'VTEX',
-     'VTEX IO',
-     'Salesforce Commerce Cloud',
-     'Linx Commerce',
-    ],
-    tools: [
-     'Git',
-     'Node.js',
-     'Figma',
-     'Docker',
-     'Linux',
-     'Vite',
-     'Tailwind CSS',
-     'Bootstrap',
-    ],
+    title: 'Arsenal Técnico',
+    categories: [
+      {
+        icon: CodeXml,
+        color: 'color-drac-purple',
+        title: 'Frontend',
+        items: [
+          'JavaScript (ES6+)',
+          'TypeScript',
+          'HTML5/CSS3',
+          'SCSS',
+          'React',
+          'Vue.js',
+          'jQuery',
+        ]
+      },
+      {
+        icon: ShoppingBag,
+        color: 'color-drac-cyan',
+        title: 'E-commerce',
+        items: [
+          'Shopify (Liquid)',
+          'VTEX',
+          'VTEX IO',
+          'Salesforce Commerce Cloud',
+          'Linx Commerce',
+        ]
+      },
+      {
+        icon: Cpu,
+        color: 'color-drac-pink',
+        title: 'Tools',
+        items: [
+          'Git',
+          'Node.js',
+          'Figma',
+          'Docker',
+          'Linux',
+          'Vite',
+          'Tailwind CSS',
+          'Bootstrap',
+        ]
+      }
+    ]
   },
   experience: {
     title: 'Professional Journey',
@@ -151,9 +173,30 @@ export const en = {
     text: 'Crafting conversion-focused digital infrastructure for global retailers.',
     disclaimer: 'Due to NDA restrictions, some enterprise projects are shown with limited details.',
     cards: [
-      { title: 'Global Retailer Storefront', desc: 'Lorem ipsum', impact: '25%', impactDesc: 'Increase in Mobile CR', info: 'Lorem ipsum' },
-      { title: 'Global Retailer Storefront', desc: 'Lorem ipsum', impact: '25%', impactDesc: 'Increase in Mobile CR', info: 'Lorem ipsum' },
-      { title: 'Global Retailer Storefront', desc: 'Lorem ipsum', impact: '25%', impactDesc: 'Increase in Mobile CR', info: 'Lorem ipsum' },
+      { 
+        icon: ShoppingBag, 
+        title: 'Storefront Varejo Global', 
+        desc: 'Lorem ipsum', 
+        impact: '25%', 
+        impactDesc: 'Aumento em CR Mobile', 
+        tags: [ 'Lorem Ipsum', 'Lorem ipsum', 'Lorem ipsum' ],
+      },
+      { 
+        icon: ShoppingBag, 
+        title: 'Storefront Varejo Global', 
+        desc: 'Lorem ipsum', 
+        impact: '25%', 
+        impactDesc: 'Aumento em CR Mobile', 
+        tags: [ 'Lorem Ipsum', 'Lorem ipsum', 'Lorem ipsum' ],
+      },
+      { 
+        icon: ShoppingBag, 
+        title: 'Storefront Varejo Global', 
+        desc: 'Lorem ipsum', 
+        impact: '25%', 
+        impactDesc: 'Aumento em CR Mobile', 
+        tags: [ 'Lorem Ipsum', 'Lorem ipsum', 'Lorem ipsum' ],
+      },
     ],
   },
   contact: {
