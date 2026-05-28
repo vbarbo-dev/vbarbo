@@ -2,21 +2,34 @@
 
 .experience > .jobs {
   display: flex;
-  gap: 1.6rem;
+  gap: 3.2rem;
   align-items: center;
+  flex-direction: column;
+
+  @include media("md") {  flex-direction: row; gap: 1.6rem }
 
   .job-tabs {
     display: flex;
     gap: 2rem;
-    flex-direction: column;
+    width: 100%;
+    justify-content: space-around;
+
+    @include media("md") {flex-direction: column; width: fit-content }
 
     > .job-tab {
-      min-width: 10rem;
-      padding: 0 .8rem;
       font-weight: 600;
+      padding: 0 0 .8rem;
       cursor: pointer;
       position: relative;
       transition: .2s ease;
+      border-bottom: 3px solid transparent;
+
+      @include media("md") {
+        padding: 0 .8rem;
+        min-width: 10rem;
+        border-bottom: none;
+        border-left: 3px solid transparent;
+      }
 
       &:hover {
         color: var(--color-drac-purple);
@@ -24,47 +37,46 @@
 
       &.-active {
         color: var(--color-drac-purple);
-        border-left: 3px solid var(--color-drac-purple);
+        border-color: var(--color-drac-purple);
       }
     }
   }
 
   .job-content {
     flex: 1;
-    min-height: 20rem;
+    width: 100%;
     position: relative;
+
+    @include media("md") { min-height: 20rem }
   }
 
   .job {
     @include card-style;
     padding: 3.2rem;
-    display: grid;
     gap: 3.2rem;
     border-radius: 2.4rem;
     align-items: center;
     grid-template-columns: repeat(1, 1fr);
 
-    @include media('md') {
-      grid-template-columns: 1.2fr 2fr;
-    }
-  
+    display: none;
     opacity: 0;
     pointer-events: none;
-
-    position: absolute;
     inset: 0;
-    transform: translateY(20px);
+    transition: transform .4s ease;
 
-    transition:
-      transform .8s ease;
-
-    &.-active {
-      opacity: 1;
-      pointer-events: auto;
-      transform: translateY(0);
+    @include media("md") {
+      display: grid;
+      position: absolute;
+      grid-template-columns: 1fr 2fr;
     }
 
-    // &:hover { transform: translateY(-5px) }
+    &.-active {
+      display: grid;
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    &:hover { transform: translateY(-5px) }
     &:hover .bullets .bullet:before { opacity: 1 }
   }
 

@@ -3,6 +3,7 @@ import { jobTabs } from "./jobTabs";
 import { backToTop } from "./backTop";
 import { form } from "./contactForm";
 import { initHeaderScroll } from "./setScroll";
+import { initScrollSpy } from "./scrollSpy";
 
 document.addEventListener('DOMContentLoaded', () => {
   headerMenu();
@@ -10,4 +11,5 @@ document.addEventListener('DOMContentLoaded', () => {
   backToTop();
   form();
   initHeaderScroll();
+  initScrollSpy();
 });

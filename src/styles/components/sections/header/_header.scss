@@ -14,12 +14,14 @@
   border: 1px solid;
   font-size: 1.4rem;
   margin-bottom: 4rem;
-  border-color: color-mix(in oklab, var(--color-black) 5%, transparent);
+  background: transparent;
+  border-color: transparent;
   backdrop-filter: blur(20px);
-  background: rgba(255,255,255,.7);
 
   &:not(.on-top) {
     padding: 1.2rem 0;
+    background: rgba(255,255,255,.7);
+    border-color: color-mix(in oklab, var(--color-black) 5%, transparent);
 
     > .container .logo {
       width: 4.2rem;
@@ -118,11 +120,35 @@
     align-items: center;
     color: var(--gray-3);
 
-    .menu-item:hover {
-      color: var(--color-black);
+    .menu-item {
+      position: relative;
+
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        width: 100%;
+        height: 2px;
+        border-radius: 999px;
+        transform: scaleX(0);
+        transition: .25s transform ease;
+        transform-origin: left;
+        background: var(--color-drac-purple);
+      }
+
+      &.-active::after {
+        transform: scaleX(1);
+      }
+    }
+
+    .menu-item:hover,
+    .menu-item.-active {
+      color: var(--color-drac-purple);
       transition: var(--transition);
     }
-    
+
     @include media('xs') {
       width: 100%;
       padding: 2.4rem 5%;

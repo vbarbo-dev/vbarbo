@@ -11,8 +11,8 @@ const { menu } = Astro.props as Props;
 <ul class="menu">
   {menu.map((item) => {
     return(
-      <li class="menu-item">
-        <a href={item.link}>{item.title}</a>
+      <li class="menu-item" data-link={item.link.replace('#', '')}>
+        <a href={item.link} title={item.title}>{item.title}</a>
       </li>
     )
   })}
