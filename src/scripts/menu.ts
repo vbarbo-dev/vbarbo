@@ -1,7 +1,9 @@
-const button = document.querySelector('[data-open-menu]');
-const menu = document.querySelector('.menu');
+export function headerMenu() {
+  const button = document.querySelector('[data-open-menu]');
+  const menu = document.querySelector('.menu');
 
-button?.addEventListener('click', () => {
-  button?.classList.toggle('-active');
-  menu?.classList.toggle('-open');
-});
+  button?.addEventListener('click', () => {
+    button?.classList.toggle('-active');
+    menu?.classList.toggle('-open');
+  });
+}
