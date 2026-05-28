@@ -1,16 +1,32 @@
 @use '../../../abstracts/mixins' as *;
 
 .header {
-  position: sticky;
+  position: fixed;
   top: 0;
+  width: 100%;
   z-index: 20;
-  padding: 1.6rem 0;
+  padding: 2rem 0;
+  transition:
+    background .25s ease,
+    border-color .25s ease,
+    transform .25s ease,
+    padding .25s ease;
   border: 1px solid;
   font-size: 1.4rem;
   margin-bottom: 4rem;
   border-color: color-mix(in oklab, var(--color-black) 5%, transparent);
   backdrop-filter: blur(20px);
   background: rgba(255,255,255,.7);
+
+  &:not(.on-top) {
+    padding: 1.2rem 0;
+
+    > .container .logo {
+      width: 4.2rem;
+      height: 4.2rem;
+      font-size: 1.8rem;
+    }
+  }
 
   > .container {
     display: flex;
@@ -32,6 +48,7 @@
     border-radius: .8rem;
     color: var(--color-white);
     font-family: var(--font-logo);
+    transition: all .25s ease;
     background-color: var(--color-brand-primary);
   }
 

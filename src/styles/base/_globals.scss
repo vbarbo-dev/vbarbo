@@ -20,7 +20,7 @@
 }
 
 .section {
-  margin-bottom: 8rem;
+  margin-bottom: 16rem;
 }
 
 .color-drac-purple { color: var(--color-drac-purple) }
@@ -74,6 +74,7 @@ body {
   font-family: var(--font-sans) !important;
   font-weight: var(--font-weight-base) !important;
   background-color: var(--color-background);
+  padding-top: 15rem;
 
   overflow-x: hidden;
 }
