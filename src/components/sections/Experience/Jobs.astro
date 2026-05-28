@@ -6,30 +6,42 @@ interface Props {
 }
 
 const { jobs } = Astro.props as Props;
+const slugify = (value: string) => value.toLowerCase().replace(/\s+/g, '-');
 ---
 
 <div class="jobs">
-  {jobs.map((job) => {
-    return(
-      <div class="job">
-        <div class="infos">
-          <div class="period color-drac-purple">{job.start} — {job.end}</div>
-          <div class="company">{job.company}</div>
-          <div class="role">{job.role}</div>
 
-          <div class="tags">
-            {job.tags.map(tag => {
-              return(<div class="tag">{tag}</div>)
-            })}
+  <div class="job-tabs">
+    {jobs.map((job) => {
+      return(
+        <div class="job-tab" data-tab={slugify(job.company)}>{job.company}</div>
+      )
+    })}
+  </div>
+
+  <div class="job-content">
+    {jobs.map((job) => {
+      return(
+        <div class="job" data-content={slugify(job.company)}>
+          <div class="infos">
+            <div class="period color-drac-purple">{job.start} — {job.end}</div>
+            <div class="company">{job.company}</div>
+            <div class="role">{job.role}</div>
+
+            <div class="tags">
+              {job.tags.map(tag => {
+                return(<div class="tag">{tag}</div>)
+              })}
+            </div>
           </div>
-        </div>
 
-        <ul class="bullets">
-          {job.bullets.map(bullet => {
-            return(<li class="bullet">{bullet}</li>)
-          })}
-        </ul>
-      </div>
-    );
-  })}
+          <ul class="bullets">
+            {job.bullets.map(bullet => {
+              return(<li class="bullet">{bullet}</li>)
+            })}
+          </ul>
+        </div>
+      );
+    })}
+  </div>
 </div>
