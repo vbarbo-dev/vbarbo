@@ -20,7 +20,18 @@
 }
 
 .section {
+  position: relative;
   margin-bottom: 16rem;
+
+  @include media('xs') { margin-bottom: 8rem }
+}
+
+.anchor {
+  position: absolute;
+  top: -9rem;
+  left: 0;
+  width: 100%;
+  height: 6.8rem;
 }
 
 .color-drac-purple { color: var(--color-drac-purple) }
@@ -67,6 +78,7 @@ html {
   color: var(--font-color-base);
   font-size: 62.5%; // 1rem = 10px
   line-height: var(--line-height);
+  scroll-behavior: smooth;
 }
 
 body {
@@ -74,9 +86,10 @@ body {
   font-family: var(--font-sans) !important;
   font-weight: var(--font-weight-base) !important;
   background-color: var(--color-background);
+  overflow-x: hidden;
   padding-top: 15rem;
 
-  overflow-x: hidden;
+  @include media('xs') { padding-top: 12rem }
 }
 
 // Configurações da Barra de Scroll
