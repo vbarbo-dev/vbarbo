@@ -46,8 +46,6 @@
     flex: 1;
     width: 100%;
     position: relative;
-
-    @include media("md") { min-height: 20rem }
   }
 
   .job {
@@ -65,8 +63,7 @@
     transition: transform .4s ease;
 
     @include media("md") {
-      display: grid;
-      position: absolute;
+      min-height: 24rem;
       grid-template-columns: 1fr 2fr;
     }
 
@@ -114,6 +111,7 @@
       font-size: 1rem;
       font-weight: 500;
       line-height: 15px;
+      height: fit-content;
       padding: .2rem .8rem;
       border: 1px solid;
       border-radius: .4rem;
@@ -150,6 +148,7 @@
       display: block;
       width: .6rem;
       height: .6rem;
+      min-width: .6rem;
       opacity: .5;
       border-radius: 100%;
       transition: var(--transition);
