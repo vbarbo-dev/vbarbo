@@ -12,7 +12,7 @@ export const pt = {
     { title: 'Especialidades', link: '#expertise' },
     { title: 'Arsenal Técnico', link: '#skills' },
     { title: 'Jornada Profissional', link: '#experience' },
-    { title: 'Projetos Selecionados', link: '#projects' },
+    // { title: 'Projetos Selecionados', link: '#projects' },
     { title: 'Contato', link: '#contact' },
   ],
   links: {
