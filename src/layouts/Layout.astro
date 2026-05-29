@@ -23,7 +23,9 @@ const { title = 'Vinicius Barbo | Frontend Developer', lang = 'pt' } = Astro.pro
 	<body>
 		<slot />
 
-		<script src="../scripts/main.ts"></script>
+		<script type="module">
+			import '../scripts/main.ts';
+		</script>
 	</body>
 </html>
 
