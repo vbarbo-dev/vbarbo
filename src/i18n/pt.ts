@@ -121,49 +121,59 @@ export const pt = {
       {
         company: 'Olist',
         role: 'Desenvolvedor Frontend Pleno',
-        start: '2023',
-        end: '2026',
-        tags: ['Liquid', 'JavaScript (ES6+)', 'SCSS', 'Node.js'],
+        start: '2023/out',
+        end: '2026/abr',
+        tags: ['Liquid', 'JavaScript (ES6+)', 'SCSS', 'Node.js', 'API Rest', 'GitLab', 'E-commerce SEO'],
         bullets: [
-          'Lorem ipsum',
-          'Lorem ipsum',
-          'Lorem ipsum',
+          'Desenvolvimento e sustentação de e-commerces de grande porte na plataforma Vnda',
+          'Entrega de mais de 30 lojas com foco em performance e experiência do usuário',
+          'Implementação de novas funcionalidades e melhorias em lojas ativas',
+          'Resolução de problemas complexos envolvendo frontend e integrações',
+          'Atuação em ambiente ágil com alinhamentos diários e demandas simultâneas',
         ]
       },
+
       {
         company: 'Veste',
         role: 'Desenvolvedor Frontend Pleno',
-        start: '2021',
-        end: '2023',
-        tags: ['Liquid', 'JavaScript (ES6+)', 'SCSS', 'Node.js'],
+        start: '2021/nov',
+        end: '2023/out',
+        tags: ['Liquid', 'JavaScript (ES6+)', 'jQuery', 'SCSS', 'Node.js', 'Vue.js', 'API Rest', 'GitLab'],
         bullets: [
-          'Lorem ipsum',
-          'Lorem ipsum',
-          'Lorem ipsum',
+          'Sustentação e evolução dos e-commerces das marcas do grupo Veste',
+          'Desenvolvimento de landing pages para campanhas de marketing',
+          'Customização de widgets e novas funcionalidades na plataforma Linx Commerce',
+          'Correção de bugs e otimizações de performance',
+          'Atuação em squad ágil utilizando Azure DevOps e Scrum',
         ]
       },
+
       {
         company: 'Trinto',
         role: 'Desenvolvedor Frontend Pleno',
-        start: '2021',
-        end: '2021',
-        tags: ['Liquid', 'JavaScript (ES6+)', 'SCSS', 'Node.js'],
+        start: '2021/jun',
+        end: '2021/nov',
+        tags: ['Liquid', 'JavaScript (ES6+)', 'jQuery', 'SCSS', 'Node.js', 'API Rest', 'GitLab'],
         bullets: [
-          'Lorem ipsum',
-          'Lorem ipsum',
-          'Lorem ipsum',
+          'Atuação dedicada no cliente Veste através da agência Trinto',
+          'Gestão e organização de demandas utilizando Trello',
+          'Participação em reuniões de alinhamento técnico com cliente e squad',
+          'Desenvolvimento e sustentação de funcionalidades para e-commerce',
         ]
       },
+
       {
         company: 'DevDog',
         role: 'Desenvolvedor Frontend Junior',
-        start: '2019',
-        end: '2021',
-        tags: ['Liquid', 'JavaScript (ES6+)', 'SCSS', 'Node.js'],
+        start: '2019/jun',
+        end: '2021/jun',
+        tags: ['Liquid', 'JavaScript (ES6+)', 'jQuery', 'SCSS', 'Node.js', 'Bitbucket', 'E-mail Marketing'],
         bullets: [
-          'Lorem ipsum',
-          'Lorem ipsum',
-          'Lorem ipsum',
+          'Implementação de e-commerces na plataforma Linx Commerce',
+          'Desenvolvimento de templates para e-mail marketing via Mailbiz',
+          'Criação e manutenção de funcionalidades frontend para lojas virtuais',
+          'Versionamento de código utilizando Git e Bitbucket',
+          'Participação na entrega de mais de 10 projetos',
         ]
       },
     ],

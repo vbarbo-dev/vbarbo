@@ -120,50 +120,60 @@ export const en = {
     jobs: [
       {
         company: 'Olist',
-        role: 'Frontend Developer',
-        start: '2023',
-        end: '2026',
-        tags: ['Liquid', 'JavaScript (ES6+)', 'SCSS', 'Node.js'],
+        role: 'Mid-Level Frontend Developer',
+        start: '2023/oct',
+        end: '2026/apr',
+        tags: ['Liquid', 'JavaScript (ES6+)', 'SCSS', 'Node.js', 'REST API', 'GitLab', 'E-commerce SEO'],
         bullets: [
-          'Lorem ipsum',
-          'Lorem ipsum',
-          'Lorem ipsum',
+          'Developed and maintained large-scale e-commerce stores on the Vnda platform',
+          'Delivered more than 30 stores focused on performance and user experience',
+          'Implemented new features and improvements for active storefronts',
+          'Solved complex frontend and integration-related issues',
+          'Worked in agile environments with daily alignments and parallel demands',
         ]
       },
+
       {
         company: 'Veste',
-        role: 'Frontend Developer',
-        start: '2021',
-        end: '2023',
-        tags: ['Liquid', 'JavaScript (ES6+)', 'SCSS', 'Node.js'],
+        role: 'Mid-Level Frontend Developer',
+        start: '2021/nov',
+        end: '2023/oct',
+        tags: ['Liquid', 'JavaScript (ES6+)', 'jQuery', 'SCSS', 'Node.js', 'Vue.js', 'REST API', 'GitLab'],
         bullets: [
-          'Lorem ipsum',
-          'Lorem ipsum',
-          'Lorem ipsum',
+          'Maintained and evolved e-commerce stores for Veste group brands',
+          'Developed landing pages for marketing campaigns',
+          'Customized widgets and implemented new features on Linx Commerce',
+          'Fixed bugs and optimized storefront performance',
+          'Worked within agile squads using Azure DevOps and Scrum',
         ]
       },
+
       {
         company: 'Trinto',
-        role: 'Frontend Developer',
-        start: '2021',
-        end: '2021',
-        tags: ['Liquid', 'JavaScript (ES6+)', 'SCSS', 'Node.js'],
+        role: 'Mid-Level Frontend Developer',
+        start: '2021/jun',
+        end: '2021/nov',
+        tags: ['Liquid', 'JavaScript (ES6+)', 'jQuery', 'SCSS', 'Node.js', 'REST API', 'GitLab'],
         bullets: [
-          'Lorem ipsum',
-          'Lorem ipsum',
-          'Lorem ipsum',
+          'Dedicated frontend developer allocated to the Veste account',
+          'Managed and organized demands using Trello',
+          'Participated in technical alignment meetings with client and squad',
+          'Developed and maintained e-commerce frontend features',
         ]
       },
+
       {
         company: 'DevDog',
         role: 'Junior Frontend Developer',
-        start: '2019',
-        end: '2021',
-        tags: ['Liquid', 'JavaScript (ES6+)', 'SCSS', 'Node.js'],
+        start: '2019/jun',
+        end: '2021/jun',
+        tags: ['Liquid', 'JavaScript (ES6+)', 'jQuery', 'SCSS', 'Node.js', 'Bitbucket', 'E-mail Marketing'],
         bullets: [
-          'Lorem ipsum',
-          'Lorem ipsum',
-          'Lorem ipsum',
+          'Implemented e-commerce storefronts on the Linx Commerce platform',
+          'Developed email marketing templates using Mailbiz',
+          'Created and maintained frontend features for online stores',
+          'Handled code versioning using Git and Bitbucket',
+          'Contributed to the delivery of more than 10 projects',
         ]
       },
     ],
