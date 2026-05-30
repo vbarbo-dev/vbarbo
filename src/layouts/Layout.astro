@@ -1,5 +1,6 @@
 ---
 import '../styles/main.scss';
+import AppScripts from '../components/AppScripts.astro';
 const { title = 'Vinicius Barbo | Frontend Developer', lang = 'pt' } = Astro.props;
 ---
 
@@ -23,9 +24,7 @@ const { title = 'Vinicius Barbo | Frontend Developer', lang = 'pt' } = Astro.pro
 	<body>
 		<slot />
 
-		<script type="module">
-			import '../scripts/main.ts';
-		</script>
+		<AppScripts />
 	</body>
 </html>
 
