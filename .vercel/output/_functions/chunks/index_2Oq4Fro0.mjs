@@ -1,7 +1,7 @@
-import { c as createComponent } from './astro-component_CK0_TJgy.mjs';
+import { c as createComponent } from './astro-component_Dpxd0C9c.mjs';
 import 'piccolore';
-import { n as renderComponent, r as renderTemplate, m as maybeRenderHead } from './entrypoint_CyobgzSn.mjs';
-import { $ as $$ShoppingBag, a as $$CodeXml, b as $$Zap, c as $$Layers, d as $$Cpu, e as $$Layout, f as $$Header, g as $$Hero, h as $$About, i as $$Expertise, j as $$Technical, k as $$Experience, l as $$Contact, m as $$Footer } from './Footer_De7kn9XA.mjs';
+import { n as renderComponent, r as renderTemplate, m as maybeRenderHead } from './entrypoint_6Uu9wMgq.mjs';
+import { $ as $$ShoppingBag, a as $$CodeXml, b as $$Zap, c as $$Layers, d as $$Cpu, e as $$Layout, f as $$Header, g as $$Hero, h as $$About, i as $$Expertise, j as $$Technical, k as $$Experience, l as $$Contact, m as $$Footer } from './Footer_DR-lupvI.mjs';
 
 const en = {
   menu: [

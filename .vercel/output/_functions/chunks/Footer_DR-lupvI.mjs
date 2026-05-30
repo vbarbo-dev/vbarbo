@@ -1,21 +1,7 @@
-import { c as createComponent } from './astro-component_CK0_TJgy.mjs';
+import { c as createComponent } from './astro-component_Dpxd0C9c.mjs';
 import 'piccolore';
-import { o as createRenderInstruction, m as maybeRenderHead, s as spreadAttributes, h as addAttribute, p as renderSlot, r as renderTemplate, n as renderComponent, q as renderHead } from './entrypoint_CyobgzSn.mjs';
+import { m as maybeRenderHead, s as spreadAttributes, h as addAttribute, o as renderSlot, r as renderTemplate, n as renderComponent, p as renderHead } from './entrypoint_6Uu9wMgq.mjs';
 import 'clsx';
-
-async function renderScript(result, id) {
-  const inlined = result.inlinedScripts.get(id);
-  let content = "";
-  if (inlined != null) {
-    if (inlined) {
-      content = `<script type="module">${inlined}</script>`;
-    }
-  } else {
-    const resolved = await result.resolve(id);
-    content = `<script type="module" src="${result.userAssetsBase ? (result.base === "/" ? "" : result.base) + result.userAssetsBase : ""}${resolved}"></script>`;
-  }
-  return createRenderInstruction({ type: "script", id, content });
-}
 
 const $$ = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$props, $$slots);
@@ -124,11 +110,17 @@ const $$Zap = createComponent(($$result, $$props, $$slots) => {
   return renderTemplate`${renderComponent($$result, "Layout", $$, { "iconName": "zap", ...Astro2.props }, { "default": ($$result2) => renderTemplate` ${maybeRenderHead()}<path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path> ` })}`;
 }, "G:/dev/vBarbo/node_modules/lucide-astro/dist/Zap.astro", void 0);
 
+var __freeze$1 = Object.freeze;
+var __defProp$1 = Object.defineProperty;
+var __template$1 = (cooked, raw) => __freeze$1(__defProp$1(cooked, "raw", { value: __freeze$1(cooked.slice()) }));
+var _a$1;
 const $$Layout = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$props, $$slots);
   Astro2.self = $$Layout;
   const { title = "Vinicius Barbo | Frontend Developer", lang = "pt" } = Astro2.props;
-  return renderTemplate`<html${addAttribute(lang, "lang")} data-astro-cid-sckkx6r4> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="icon" href="/favicon.ico"><link rel="shortcut icon" href="/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png"><link rel="manifest" href="/favicon/manifest.json"><meta name="generator"${addAttribute(Astro2.generator, "content")}><title>${title}</title>${renderHead()}</head> <body data-astro-cid-sckkx6r4> ${renderSlot($$result, $$slots["default"])} ${renderScript($$result, "G:/dev/vBarbo/src/layouts/Layout.astro?astro&type=script&index=0&lang.ts")} </body> </html> `;
+  return renderTemplate(_a$1 || (_a$1 = __template$1(["<html", ' data-astro-cid-sckkx6r4> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="icon" href="/favicon.ico"><link rel="shortcut icon" href="/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png"><link rel="manifest" href="/favicon/manifest.json"><meta name="generator"', "><title>", "</title>", "</head> <body data-astro-cid-sckkx6r4> ", ` <script type="module">
+			import '../scripts/main.ts';
+		<\/script> </body> </html> `])), addAttribute(lang, "lang"), addAttribute(Astro2.generator, "content"), title, renderHead(), renderSlot($$result, $$slots["default"]));
 }, "G:/dev/vBarbo/src/layouts/Layout.astro", void 0);
 
 const $$Menu = createComponent(($$result, $$props, $$slots) => {
