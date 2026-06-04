@@ -1,7 +1,17 @@
 ---
 import '../styles/main.scss';
 import AppScripts from '../components/AppScripts.astro';
-const { title = 'Vinicius Barbo | Frontend Developer', lang = 'pt' } = Astro.props;
+import { seo } from '../i18n/seo';
+
+const {
+  lang = 'pt',
+  path = '',
+} = Astro.props;
+
+const meta = seo[lang as keyof typeof seo];
+
+const siteUrl = 'https://vbarbo.com.br';
+const canonicalUrl = `${siteUrl}${path}`;
 ---
 
 <!doctype html>
@@ -19,7 +29,27 @@ const { title = 'Vinicius Barbo | Frontend Developer', lang = 'pt' } = Astro.pro
     <link rel="manifest" href="/favicon/manifest.json"/>
 
 		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
+		<title>{meta.title}</title>
+
+		<meta name="description" content={meta.description} />
+
+		<link rel="canonical" href={canonicalUrl} />
+
+		<link rel="alternate" hreflang="pt-BR" href="https://vbarbo.com.br/" />
+		<link rel="alternate" hreflang="en" href="https://vbarbo.com.br/en" />
+		<link rel="alternate" hreflang="x-default" href="https://vbarbo.com.br/" />
+
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content="vBarbo" />
+		<meta property="og:title" content={meta.ogTitle} />
+		<meta property="og:description" content={meta.ogDescription} />
+		<meta property="og:image" content="https://vbarbo.com.br/og.png" />
+		<meta property="og:url" content={canonicalUrl} />
+
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content={meta.ogTitle} />
+		<meta name="twitter:description" content={meta.ogDescription} />
+		<meta name="twitter:image" content="https://vbarbo.com.br/og.png" />
 	</head>
 	<body>
 		<slot />
