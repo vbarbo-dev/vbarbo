@@ -36,20 +36,27 @@
   }
 
   .card {
-    position: relative;
     cursor: pointer;
   }
 
   .external-arrow {
-    position: absolute;
-    right: 3.2rem;
-    top: 3.2rem;
+    width: 2.4rem;
+    height: 2.4rem;
+    margin-left: auto;
 
     .lucide {
       width: 2.4rem;
       height: 2.4rem;
       color: var(--color-zinc-300);
     }
+  }
+
+  .card-header {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    position: relative;
+    margin-bottom: 2.4rem;
   }
 
   .icon .lucide {
@@ -60,7 +67,7 @@
     font-weight: 700;
     font-size: 2.4rem;
     line-height: 32px;
-    margin-bottom: 1.6rem;
+    margin-bottom: 0;
   }
 
   .card-desc {
