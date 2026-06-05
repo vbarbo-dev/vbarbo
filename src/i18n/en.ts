@@ -70,7 +70,7 @@ export const en = {
     ]
   },
   technical: {
-    title: 'Arsenal Técnico',
+    title: 'Skills',
     categories: [
       {
         icon: CodeXml,
