@@ -16,7 +16,15 @@ const { cards } = Astro.props as Props;
     return (
       <div class="card">
         <div class="external-arrow"><ArrowUpRight /></div>
-        {Icon && (<div class="icon"><Icon /></div>)}
+        {card.logo ? (
+          <div class="logo">
+            <img src={card.logo} alt={`Logo ${card.title}`} title={`Logo ${card.title}`} loading="lazy" />
+          </div>
+        ) : Icon ? (
+          <div class="icon">
+            <Icon />
+          </div>
+        ) : null}
         <span class="card-title">{card.title}</span>
         <span class="card-desc">{card.desc}</span>
 

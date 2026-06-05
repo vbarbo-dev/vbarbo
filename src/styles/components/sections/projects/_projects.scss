@@ -37,6 +37,7 @@
 
   .card {
     position: relative;
+    cursor: pointer;
   }
 
   .external-arrow {
@@ -67,6 +68,7 @@
     font-size: 1.4rem;
     line-height: 22px;
     margin-bottom: 2.4rem;
+    min-height: 4.4rem;
   }
 
   .card-impact {
@@ -80,9 +82,10 @@
     border-color: color-mix(in oklab, var(--color-black) 5%, transparent);
 
     .impact {
-      font-size: 2.4rem;
+      font-size: 1.8rem;
       font-weight: 700;
-      color: var(--font-color-900);
+      margin-bottom: .8rem;
+      color: var(--color-zinc-900);
       font-family: var(--font-display);
     }
 
@@ -104,12 +107,25 @@
 
     display: flex;
     gap: .8rem;
+    flex-wrap: wrap;
 
-    .tag {
+   .tag {
       font-size: 1rem;
+      font-weight: 500;
       line-height: 15px;
-      color: var(--color-zinc-400);
-      font-family: var(--font-mono);
+      height: fit-content;
+      padding: .2rem .8rem;
+      border: 1px solid;
+      border-radius: .4rem;
+      color: var(--color-zinc-500);
+      transition: var(--transition);
+      background-color: var(--color-zinc-100);
+      border-color: color-mix(in oklab, var(--color-black) 5%, transparent);
+
+      &:hover {
+        color: var(--color-zinc-900);
+        border-color: color-mix(in oklab, var(--color-black) 20%, transparent);
+      }
     }
   }
 }

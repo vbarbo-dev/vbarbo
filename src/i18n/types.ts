@@ -7,6 +7,7 @@ export type Menu = {
 
 export type Card = {
   icon?: AstroComponentFactory;
+  logo?: string;
   title: string;
   desc: string;
   impact: string;

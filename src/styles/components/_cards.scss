@@ -30,7 +30,7 @@
     display: flex;
     gap: .8rem;
     flex-direction: column;
-    padding: 3.2rem;
+    padding: 2.4rem;
     @include card-style;
 
     &:hover { transform: translateY(-5px) }
