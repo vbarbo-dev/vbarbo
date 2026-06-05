@@ -8,12 +8,12 @@ import {
 
 export const en = {
   menu: [
-    { title: 'Sobre', link: '#about' },
-    { title: 'Especialidades', link: '#expertise' },
-    { title: 'Arsenal Técnico', link: '#skills' },
-    { title: 'Jornada Profissional', link: '#experience' },
+    { title: 'About', link: '#about' },
+    { title: 'Expertise', link: '#expertise' },
+    { title: 'Skills', link: '#skills' },
+    { title: 'Experience', link: '#experience' },
     // { title: 'Projetos Selecionados', link: '#projects' },
-    { title: 'Contato', link: '#contact' },
+    { title: 'Contact', link: '#contact' },
   ],
   links: {
     linkedin: 'https://www.linkedin.com/in/vinicius-barbo/?locale=en-US',
