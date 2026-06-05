@@ -210,7 +210,7 @@ export const pt = {
       {
         logo: '/images/mariaantonieta.png', 
         title: 'Maria Antonieta',
-        desc: 'Loja virtual da tradicional pâtisserie-boulangerie.',
+        desc: 'Chocolaterie e empório online da tradicional pâtisserie-boulangerie Maria Antonieta.',
         impact: 'EXPERIÊNCIA PREMIUM',
         impactDesc: 'Storefront personalizado alinhado à identidade sofisticada da marca.',
         tags:  ['Experiência premium', 'Performance', 'SEO', 'Liquid', 'SCSS', 'JavaScript ES6+'],

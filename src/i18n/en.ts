@@ -212,7 +212,7 @@ export const en = {
         title: 'Maria Antonieta',
         desc: 'Online storefront for a traditional pâtisserie and boulangerie.',
         impact: 'PREMIUM EXPERIENCE',
-        impactDesc: 'Custom storefront aligned with the brand’s sophisticated identity.',
+        impactDesc: 'Online chocolaterie and gourmet boutique from the traditional Maria Antonieta pâtisserie-boulangerie.',
         tags: ['Premium Experience', 'Performance', 'SEO', 'Liquid', 'SCSS', 'JavaScript ES6+'],
       },
       {
