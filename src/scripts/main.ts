@@ -4,6 +4,7 @@ import { backToTop } from "./backTop";
 import { form } from "./contactForm";
 import { initHeaderScroll } from "./setScroll";
 import { initScrollSpy } from "./scrollSpy";
+import { modal } from "./modal";
 
 document.addEventListener('DOMContentLoaded', () => {
   headerMenu();
@@ -12,4 +13,5 @@ document.addEventListener('DOMContentLoaded', () => {
   form();
   initHeaderScroll();
   initScrollSpy();
+  modal();
 });

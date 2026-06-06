@@ -14,7 +14,7 @@ const { cards } = Astro.props as Props;
     const Icon = card.icon;
 
     return (
-      <div class="card">
+      <div class="card" data-project={card.slug} data-preview={card.preview}>
         <div class="card-header">
           {card.logo ? (
             <div class="logo">

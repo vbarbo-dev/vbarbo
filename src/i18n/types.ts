@@ -9,6 +9,8 @@ export type Card = {
   icon?: AstroComponentFactory;
   logo?: string;
   title: string;
+  slug: string;
+  preview: string;
   desc: string;
   impact: string;
   impactDesc: string;

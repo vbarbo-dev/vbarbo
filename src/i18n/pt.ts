@@ -184,8 +184,10 @@ export const pt = {
     disclaimer: 'Devido a restrições de NDA, alguns projetos enterprise são exibidos com detalhes limitados.',
     cards: [
       {
-        logo: '/images/ykigai.png', 
+        logo: '/images/ykigai.png',
+        preview: '/images/ykigai-preview.png',
         title: 'Ykigai',
+        slug: 'ykigai',
         desc: 'E-commerce premium de óculos inspirado na estética e filosofia japonesa.',
         impact: 'LENTES PERSONALIZADAS',
         impactDesc: 'Fluxo completo para lentes solares, com grau e envio de receita.',
@@ -193,7 +195,9 @@ export const pt = {
       },
       {
         logo: '/images/hibiscobeach.png', 
+        preview: '/images/hibiscobeach-preview.png',
         title: 'Hibisco Beach',
+        slug: 'hibisco',
         desc: 'Loja virtual de moda feminina focada em vestidos, macacões e peças autorais.',
         impact: 'SHOP THE LOOK',
         impactDesc: 'Experiência interativa para compra de peças diretamente dos looks.',
@@ -201,7 +205,9 @@ export const pt = {
       },
       {
         logo: '/images/casaencanto.png', 
+        preview: '/images/casaencanto-preview.png',
         title: 'Casa Encanto',
+        slug: 'casaencanto',
         desc: 'E-commerce de casa e decoração com ampla variedade de tapetes e artigos mesa e banho.',
         impact: 'NAVEGAÇÃO AVANÇADA',
         impactDesc: 'Seleção dinâmica de formatos e tamanhos entre produtos relacionados.',
@@ -209,7 +215,9 @@ export const pt = {
       },
       {
         logo: '/images/mariaantonieta.png', 
+        preview: '/images/mariaantonieta-preview.png',
         title: 'Maria Antonieta',
+        slug: 'mariaantonieta',
         desc: 'Chocolaterie e empório online da tradicional pâtisserie-boulangerie Maria Antonieta.',
         impact: 'EXPERIÊNCIA PREMIUM',
         impactDesc: 'Storefront personalizado alinhado à identidade sofisticada da marca.',
@@ -217,7 +225,9 @@ export const pt = {
       },
       {
         logo: '/images/pipizito.png', 
+        preview: '/images/pipizito-preview.png',
         title: 'Pipizito',
+        slug: 'pipizito',
         desc: 'E-commerce DTC para um produto inovador voltado ao público feminino.',
         impact: 'IDENTIDADE VISUAL',
         impactDesc: 'Layout altamente customizado com formas orgânicas e cores vibrantes.',

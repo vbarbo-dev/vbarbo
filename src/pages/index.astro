@@ -19,6 +19,9 @@ import Contact from '../components/sections/Contact/Contact.astro';
 
 // Footer
 import Footer from '../components/sections/Footer/Footer.astro'
+
+// Modal
+import Modal from '../components/ui/Modal.astro';
 ---
 
 <Layout lang="pt" path="/">
@@ -32,6 +35,8 @@ import Footer from '../components/sections/Footer/Footer.astro'
     <Experience experience={t.experience}, lang={lang} />
     <Projects projects={t.projects}, lang={lang} />
     <Contact contact={t.contact} links={t.links} lang={lang} />
+
+    <Modal />
   </main>
   
   <Footer footer={t.footer} lang={lang} />

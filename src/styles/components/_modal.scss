@@ -1,0 +1,65 @@
+@use '../abstracts/mixins';
+
+.project-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 2rem;
+
+  background: rgba(0, 0, 0, .4);
+  backdrop-filter: blur(12px);
+
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s ease;
+
+  &.-active {
+    opacity: 1;
+    visibility: visible;
+
+    > .modal-container { transform: translateY(0) }
+    
+  }
+}
+
+.project-modal > .modal-container .close {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: var(--color-white);
+  box-shadow:
+    0 1px 3px 0 rgb(0 0 0 / 0.1),
+    0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+
+.project-modal > .modal-container {
+  width: min(1400px, 95vw);
+  height: 95vh;
+  position: relative;
+
+  border-radius: .8rem;
+  overflow: hidden;
+  transform: translateY(20px);
+  transition: .3s ease;
+}
+
+.project-modal > .modal-container .modal {
+  width: 100%;
+  height: 100%;
+
+  background: var(--color-background);
+
+  overflow-y: auto;
+}
