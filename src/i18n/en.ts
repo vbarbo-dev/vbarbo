@@ -12,7 +12,7 @@ export const en = {
     { title: 'Expertise', link: '#expertise' },
     { title: 'Skills', link: '#skills' },
     { title: 'Experience', link: '#experience' },
-    { title: 'Projetos Selecionados', link: '#projects' },
+    { title: 'Selected Works', link: '#projects' },
     { title: 'Contact', link: '#contact' },
   ],
   links: {
@@ -21,25 +21,25 @@ export const en = {
     email: 'vinicius@vbarbo.com.br',
   },
   hero: {
-    upper: 'Frontend Engineer | E-commerce Specialist',
+    upper: 'Frontend Engineer | E-commerce',
     title: 'Vinicius Barbo',
     text: 'Building scalable e-commerce experiences.',
-    description: '6+ years of experience specialized in enterprise Shopify stores, performance optimization, and custom Liquid storefronts.',
+    description: '6+ years of experience building high-performance e-commerce solutions, with expertise in Liquid-based platforms, performance optimization, and custom frontend experiences.',
     bottomTitle: 'Social',
     contact: 'Contact Me',
     projects: 'View Projects',
     badges: [
       { label: '+6 Years Experience' },
-      { label: 'Shopify Expert' },
+      { label: 'E-commerce Specialist' },
     ],
   },
   about: {
     textTitle: 'About',
-    text: 'I architect and build high-performance e-commerce solutions for global brands. With over 6 years in the industry, I focus on the intersection of technical excellence and commercial impact, ensuring stores are not just beautiful but optimized for conversion and scale.', 
+    text: 'I design and develop high-performance e-commerce experiences for brands across different industries. With more than 6 years in the market, I work at the intersection of technical excellence and business impact, creating storefronts optimized for conversion, performance, and scalability.',
     cards: [
       { title: '6+', desc: 'Years experience' },
       { title: '40+', desc: 'Stores delivered' },
-      { title: 'Shopify', desc: 'Main platform' },
+      { title: 'Liquid', desc: 'Specialty' },
       { title: 'Worldwide', desc: 'Availability' },
     ]
   },
@@ -54,8 +54,8 @@ export const en = {
       },
       {
         icon: CodeXml,
-        title: 'Shopify Customization',
-        desc: 'Deep diving into Liquid, OS 2.0, and Hydrogen to push the boundaries of what Shopify can do.'
+        title: 'Frontend for E-commerce',
+        desc: 'Building custom interfaces for e-commerce platforms with a focus on user experience and conversion.'
       },
       {
         icon: Zap,
@@ -68,7 +68,7 @@ export const en = {
         desc: 'Designing scalable component libraries and design systems tailored for large-scale retail.'
       },
     ]
-  },
+},
   technical: {
     title: 'Skills',
     categories: [
@@ -91,7 +91,7 @@ export const en = {
         color: 'color-drac-cyan',
         title: 'E-commerce',
         items: [
-          'Shopify (Liquid)',
+          'Liquid',
           'VTEX',
           'VTEX IO',
           'Salesforce Commerce Cloud',

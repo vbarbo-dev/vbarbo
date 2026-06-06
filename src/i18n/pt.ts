@@ -21,25 +21,25 @@ export const pt = {
     email: 'vinicius@vbarbo.com.br',
   },
   hero: {
-    upper: 'Engenheiro Frontend | Especialista E-comm',
+    upper: 'Engenheiro Frontend | E-commerce',
     title: 'Vinicius Barbo',
     text: 'Construindo experiências de e-commerce escaláveis.',
-    description: 'Mais de 6 anos de experiência especializado em lojas Shopify enterprise, otimização de performance e lojas customizadas em Liquid.',
+    description: 'Mais de 6 anos desenvolvendo e-commerces de alta performance, com experiência em plataformas baseadas em Liquid, otimização de performance e interfaces customizadas.',
     bottomTitle: 'Redes',
     contact: 'Entre em contato',
     projects: 'Ver projetos',
     badges: [
       { label: '+6 Anos de Experiência' },
-      { label: 'Expert em Shopify' },
+      { label: 'Especialista em E-commerce' },
     ],
   },
   about: {
     title: 'Sobre',
-    text: 'Eu projeto e construo soluções de e-commerce de alta performance para marcas globais. Com mais de 6 anos de mercado, foco na intersecção entre excelência técnica e impacto comercial, garantindo que as lojas não sejam apenas bonitas, mas otimizadas para conversão e escala.',
+    text: 'Projeto e desenvolvo experiências de e-commerce de alta performance para marcas de diferentes segmentos. Com mais de 6 anos de mercado, atuo na intersecção entre excelência técnica e impacto comercial, criando lojas otimizadas para conversão, performance e escalabilidade.',
     cards: [
       { title: '6+', desc: 'Anos de exp.' },
       { title: '40+', desc: 'Lojas entregues' },
-      { title: 'Shopify', desc: 'Plataforma principal' },
+      { title: 'Liquid', desc: 'Especialidade' },
       { title: 'Global', desc: 'Disponibilidade' },
     ]
   },
@@ -54,8 +54,8 @@ export const pt = {
       },
       {
         icon: CodeXml,
-        title: 'Customização Shopify',
-        desc: 'Mergulho profundo em Liquid, OS 2.0 e Hydrogen para expandir os limites do Shopify.'
+        title: 'Frontend para E-commerce',
+        desc: 'Construção de interfaces customizadas para plataformas de e-commerce com foco em experiência do usuário e conversão.'
       },
       {
         icon: Zap,
@@ -91,7 +91,7 @@ export const pt = {
         color: 'color-drac-cyan',
         title: 'E-commerce',
         items: [
-          'Shopify (Liquid)',
+          'Liquid',
           'VTEX',
           'VTEX IO',
           'Salesforce Commerce Cloud',
