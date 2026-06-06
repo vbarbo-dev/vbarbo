@@ -3,17 +3,20 @@ export function modal() {
   const image = document.querySelector('.modal-image') as HTMLImageElement | null;
   const projects = document.querySelectorAll('[data-project]');
   const close = document.querySelector('[data-modal-close]');
+  const shimmer = document.querySelector('.modal-shimmer') as HTMLDivElement | null;
 
   if (!modal || !image) return;
 
-  const resetImage = () => {
+  const reset = () => {
     image.src = '';
     image.style.opacity = '0';
-    image.classList.remove('-loading');
+    image.classList.remove('-loaded');
+
+    shimmer?.classList.add('-active');
   };
 
   const loadImage = (src: string) => {
-    image.classList.add('-loading');
+    shimmer?.classList.add('-active');
     image.style.opacity = '0';
 
     const tempImg = new Image();
@@ -23,7 +26,8 @@ export function modal() {
       image.src = src;
 
       requestAnimationFrame(() => {
-        image.classList.remove('-loading');
+        shimmer?.classList.remove('-active');
+        image.classList.add('-loaded');
         image.style.opacity = '1';
       });
     };
@@ -35,7 +39,7 @@ export function modal() {
     }
   };
 
-  const openModal = (src: string) => {
+  const open = (src: string) => {
     modal.classList.add('-active');
     loadImage(src);
   };
@@ -45,13 +49,13 @@ export function modal() {
       const preview = project.getAttribute('data-preview');
       if (!preview) return;
 
-      openModal(preview);
+      open(preview);
     });
   });
 
   const closeModal = () => {
     modal.classList.remove('-active');
-    resetImage();
+    reset();
   };
 
   close?.addEventListener('click', closeModal);
