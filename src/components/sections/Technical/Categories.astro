@@ -13,7 +13,7 @@ const { categories } = Astro.props as Props;
     const Icon = category.icon;
 
     return (
-      <div class="category">
+      <div class="category reveal-item">
         <h3 class="category-title">
           {Icon && (<div class={`icon ${category.color}`}><Icon /></div>)}
           {category.title}
