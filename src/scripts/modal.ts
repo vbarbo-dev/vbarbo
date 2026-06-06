@@ -7,6 +7,14 @@ export function modal() {
 
   if (!modal || !image) return;
 
+  const lockScroll = () => {
+    document.body.style.overflow = 'hidden';
+  };
+
+  const unlockScroll = () => {
+    document.body.style.overflow = '';
+  };
+
   const reset = () => {
     image.src = '';
     image.style.opacity = '0';
@@ -41,6 +49,7 @@ export function modal() {
 
   const open = (src: string) => {
     modal.classList.add('-active');
+    lockScroll();
     loadImage(src);
   };
 
@@ -55,6 +64,7 @@ export function modal() {
 
   const closeModal = () => {
     modal.classList.remove('-active');
+    unlockScroll();
     reset();
   };
 
