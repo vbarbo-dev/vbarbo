@@ -9,11 +9,11 @@ export function modal() {
   const resetImage = () => {
     image.src = '';
     image.style.opacity = '0';
-    modal.classList.remove('-loading');
+    image.classList.remove('-loading');
   };
 
-  const openImage = (src: string) => {
-    modal.classList.add('-loading');
+  const loadImage = (src: string) => {
+    image.classList.add('-loading');
     image.style.opacity = '0';
 
     const tempImg = new Image();
@@ -21,15 +21,13 @@ export function modal() {
 
     const show = () => {
       image.src = src;
-      modal.classList.remove('-loading');
-      modal.classList.add('-active');
 
       requestAnimationFrame(() => {
+        image.classList.remove('-loading');
         image.style.opacity = '1';
       });
     };
 
-    // decode é mais moderno, fallback pro onload
     if (tempImg.decode) {
       tempImg.decode().then(show).catch(show);
     } else {
@@ -37,12 +35,17 @@ export function modal() {
     }
   };
 
+  const openModal = (src: string) => {
+    modal.classList.add('-active');
+    loadImage(src);
+  };
+
   projects.forEach((project) => {
     project.addEventListener('click', () => {
       const preview = project.getAttribute('data-preview');
       if (!preview) return;
 
-      openImage(preview);
+      openModal(preview);
     });
   });
 

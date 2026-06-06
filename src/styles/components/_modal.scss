@@ -56,15 +56,12 @@
 
 .project-modal .modal-image {
   opacity: 0;
-  transition: opacity .2s ease;
+  transition: opacity 0.2s ease;
 }
 
-.project-modal .modal.-loading::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.4);
-  backdrop-filter: blur(6px);
+.project-modal .modal.-loading {
+  filter: blur(10px);
+  transform: scale(1.02);
 }
 
 .project-modal > .modal-container .modal {
