@@ -185,6 +185,7 @@ export const en = {
     cards: [
       {
         logo: '/images/ykigai.png',
+        preview: '/images/ykigai-preview.png',
         title: 'Ykigai',
         desc: 'Premium eyewear e-commerce inspired by Japanese aesthetics and philosophy.',
         impact: 'CUSTOM LENSES',
@@ -193,6 +194,7 @@ export const en = {
       },
       {
         logo: '/images/hibiscobeach.png',
+        preview: '/images/hibiscobeach-preview.png',
         title: 'Hibisco Beach',
         desc: 'Women’s fashion storefront focused on dresses, jumpsuits and exclusive collections.',
         impact: 'SHOP THE LOOK',
@@ -201,6 +203,7 @@ export const en = {
       },
       {
         logo: '/images/casaencanto.png',
+        preview: '/images/casaencanto-preview.png',
         title: 'Casa Encanto',
         desc: 'Home and decor e-commerce featuring rugs, bedding, bath and lifestyle products.',
         impact: 'ADVANCED NAVIGATION',
@@ -209,6 +212,7 @@ export const en = {
       },
       {
         logo: '/images/mariaantonieta.png',
+        preview: '/images/mariaantonieta-preview.png',
         title: 'Maria Antonieta',
         desc: 'Online storefront for a traditional pâtisserie and boulangerie.',
         impact: 'PREMIUM EXPERIENCE',
@@ -217,6 +221,7 @@ export const en = {
       },
       {
         logo: '/images/pipizito.png',
+        preview: '/images/pipizito-preview.png',
         title: 'Pipizito',
         desc: 'Direct-to-consumer e-commerce for an innovative product designed for women.',
         impact: 'VISUAL IDENTITY',
