@@ -224,6 +224,16 @@ export const en = {
         tags: ['Premium Experience', 'Performance', 'SEO', 'Liquid', 'SCSS', 'JavaScript ES6+'],
       },
       {
+        logo: '/images/inglesis.png',
+        preview: '/images/inglesis-preview.png',
+        title: 'Inglesis',
+        slug: 'inglesis',
+        desc: "Women's fashion e-commerce with a strong visual identity and a premium shopping experience.",
+        impact: 'BRAND IDENTITY',
+        impactDesc: "Digital experience designed to reflect the brand's creative vision with performance and usability.",
+        tags: ['Shop The Look', 'UX', 'Performance', 'SEO', 'Liquid', 'JavaScript ES6+'],
+      },
+      {
         logo: '/images/pipizito.png',
         preview: '/images/pipizito-preview.png',
         title: 'Pipizito',

@@ -224,6 +224,16 @@ export const pt = {
         tags:  ['Experiência premium', 'Performance', 'SEO', 'Liquid', 'SCSS', 'JavaScript ES6+'],
       },
       {
+        logo: '/images/inglesis.png',
+        preview: '/images/inglesis-preview.png',
+        title: 'Inglesis',
+        slug: 'inglesis',
+        desc: 'Loja virtual de moda feminina autoral com forte identidade visual e experiência de compra premium.',
+        impact: 'IDENTIDADE AUTORAL',
+        impactDesc: 'Experiência digital que traduz o universo criativo da marca com performance e usabilidade.',
+        tags: ['Shop The Look', 'UX', 'Performance', 'SEO', 'Liquid', 'JavaScript ES6+'],
+      },
+      {
         logo: '/images/pipizito.png', 
         preview: '/images/pipizito-preview.png',
         title: 'Pipizito',
