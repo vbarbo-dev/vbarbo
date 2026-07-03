@@ -1,15 +1,14 @@
 export function backToTop() {
-  const backToTopButton = document.querySelector(
-    '[data-back-to-top]'
-  ) as HTMLButtonElement | null;
+  const backToTopButtons = document.querySelectorAll<HTMLButtonElement>('[data-back-to-top]');
 
-  if (backToTopButton) {
+  if(!backToTopButtons) return;
 
-    backToTopButton.addEventListener('click', () => {
+  backToTopButtons.forEach(button => {
+    button.addEventListener('click', () => {
       window.scrollTo({
         top: 0,
         behavior: 'smooth',
       });
     });
-  }
+  });
 }
