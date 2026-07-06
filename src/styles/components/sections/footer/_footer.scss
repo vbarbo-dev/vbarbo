@@ -6,8 +6,11 @@
   border-top: 1px solid;
   font-size: 1.2rem;
   @include color-mix-bg(var(--color-white), 70%);
+  background: rgba(255,255,255);
   border-color: color-mix(in oklab, var(--color-black) 5%, transparent);
+}
 
+.footer > .container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -22,7 +25,7 @@
   @include media('xs') { row-gap: 2.4rem }
 }
 
-.footer > .copyright {
+.footer > .container .copyright {
   display: flex;
   gap: 2.4rem;
   font-weight: 700;
@@ -31,7 +34,7 @@
   color: var(--color-zinc-400);
 }
 
-.footer > .back-to-top {
+.footer > .container .back-to-top {
   font-weight: 700;
   letter-spacing: 1.2px;
   display: flex;
