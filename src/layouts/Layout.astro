@@ -12,6 +12,7 @@ const meta = seo[lang as keyof typeof seo];
 
 const siteUrl = 'https://vbarbo.com.br';
 const canonicalUrl = `${siteUrl}${path}`;
+const GA_ID = import.meta.env.PUBLIC_GA_ID;
 ---
 
 <!doctype html>
@@ -50,6 +51,15 @@ const canonicalUrl = `${siteUrl}${path}`;
 		<meta name="twitter:title" content={meta.ogTitle} />
 		<meta name="twitter:description" content={meta.ogDescription} />
 		<meta name="twitter:image" content="https://vbarbo.com.br/og.png" />
+
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-DW2CGG2L54"></script>
+		<script is:inline>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'G-DW2CGG2L54');
+		</script>
 	</head>
 	<body>
 		<slot />
