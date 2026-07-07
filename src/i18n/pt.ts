@@ -92,10 +92,10 @@ export const pt = {
         title: 'E-commerce',
         items: [
           'Liquid',
-          'VTEX',
-          'VTEX IO',
-          'Salesforce Commerce Cloud',
+          'Olist E-commerce',
           'Linx Commerce',
+          'Salesforce Commerce Cloud',
+          'VTEX',
         ]
       },
       {
